@@ -1,0 +1,95 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* height: 100px; */
+}
+.pre-header {
+  background-color: rgb(93, 93, 240);
+  height: 80px;
+}
+.container {
+  display: inline-block;
+  text-transform: uppercase;
+  width: 60px;
+  color: white;
+  font-size: 26px;
+  font-style: italic;
+  padding: 30px;
+  padding-left: 50px;
+  margin-right: 400px;
+}
+
+.container2 {
+  display: inline-block;
+  text-align: right;
+  width: 1000px;
+  text-decoration: none;
+  
+}
+
+ul li {
+  display: inline-block;
+  text-transform: capitalize;          
+  text-decoration: none;  
+  font-size: 20px;
+  color: white;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  text-decoration: none;
+}
+
+.pre-header .btn {
+  background-color: rgb(196, 196, 244);
+  color: black;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 10px;
+}
+.pre-header .btn:hover {
+  background-color: rgb(93, 93, 240);
+  color: #ffffff;
+  border: 2px solid rgb(57, 57, 232);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+/* section*/
+.section h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(57, 57, 232);
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.section p {
+  text-align: center;
+}
+.section2 {
+  box-sizing: border-box; /* nece border box */
+  margin: 100px 30px;
+  box-shadow: 6px 6px 8px 8px rgba(140, 152, 211, 0.879);
+  width: 200px;
+  height: 200px;
+  overflow: auto;
+  padding: 0px 10px;
+  display: inline-block;
+}
+
+.first {
+  margin-left: 240px;
+}
+
+.section2 h3 {
+  text-transform: capitalize;
+  padding-top: 80px;
+}
+.section2 p {
+  text-align: justify;
+  padding-top: 20px;
+}
+.section2:hover {
+  border: 1px bottom rgb(57, 57, 232);
+  background-color: rgba(140, 152, 211, 0.879);
+}
+

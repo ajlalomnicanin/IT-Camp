@@ -1,0 +1,87 @@
+body {
+  background-color: rgb(135, 187, 230);
+}
+
+div {
+  /* background-image: url(./slika.jpg); */
+  /* background-repeat: repeat-x; */
+  /* background-repeat: no-repeat; */
+
+  /* margin: 100px auto; */
+  background-color: rgb(52, 151, 204);
+  width: 400px;
+  height: 600px;
+  border: 4px solid rgb(15, 90, 211);
+  border-radius: 20px;
+  box-shadow: 6px 6px 20px 20px rgba(3, 8, 18, 0.6);
+  overflow: auto;
+  overflow-x: hidden;
+  /* display: block;   blok level elementi imaju defaultnu vrednost block */
+  /* display: inline;  */
+  display: inline-block;
+  margin: 40px;
+}
+
+/*  HTML ELEMENTS:
+1.  Blok level elements:
+    1.1 div,header, section, main, footer
+    1.2.p
+    1.3.h1-h6
+    1.4.ul,ol,li
+    
+    
+    2.Inline elementi:
+    2.1.span
+    2.2. a
+    2.3.img
+    2.4.button
+    2.5.input
+    2.6.textarea*/
+h1 {
+  text-transform: uppercase;
+  font-size: x-large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+h3 {
+  text-transform: capitalize;
+  font-size: larger;
+  font-family: "Courier New", Courier, monospace;
+  text-align: start;
+  padding: 10px;
+}
+
+img {
+  width: 400px;
+  height: 200px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  /* border-radius: 20px 20px 0px 0px */
+}
+
+p {
+  text-align: justify;
+  text-indent: 30px;
+  text-align-last: right;
+  padding: 10px;
+}
+
+div:hover {
+  background-color: aquamarine;
+}
+img:hover {
+  content: url("./slika2.jpg");
+}
+
+div:nth-of-type(2) {
+  /* visibility: hidden; /* necemo cesto koristiti zato sto je rezervisano mesto na stranici za taj elemenat*/
+  display: none;
+}
+.mein:nth-of-type(3) {
+  background-color: blue;
+}
+
+.mein:nth-of-type(3) {
+  background-color: red;
+}

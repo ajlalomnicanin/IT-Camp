@@ -1,0 +1,42 @@
+table, tr, td {
+    border:3px dashed brown;
+    border-collapse: collapse;
+    
+    margin: auto;
+    margin-top: 200px 0px;
+     height: 50px;
+     width: 1000px;
+       box-sizing: border-box;  }
+
+  .first {
+        border-top: hidden;
+        text-align: center;
+        color: brown;
+        text-transform:uppercase;
+    }
+
+
+
+    .mein {
+        background-color:white ;
+        border-top: hidden;
+        border-right: hidden;
+        border-bottom: hidden;
+        border-left: hidden;
+
+        border-radius: 20px;
+       color:brown;
+       box-shadow: 20px 20px 20px  rgb(216, 116, 116);
+    }
+
+
+   body{
+    background-color: rgb(226, 160, 45);
+   }
+   .second {
+    text-transform: uppercase;
+   }
+
+   /* :nth-child(even) { */
+    /* background-color: aquamarine; */
+   }

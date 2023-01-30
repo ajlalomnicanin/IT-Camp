@@ -1,0 +1,38 @@
+body{
+    background-color: aqua;
+}
+/* id ima prioritet u odnosu na clasu. id se obicno koristi kada zelimo da se primeni samo u jednom tagu. */
+#first-id {
+    background-color: blue;
+}
+.first{
+    background-color: bisque;
+
+}
+.first h1 {
+    text-align: center;
+}
+.first p {
+    text-align: right;
+    /* text-align: left;  start; poravnato sa leve strane*/
+    /* text-align: right; end; poravnato sa desne strane */
+    /* text-align: justify; i sa leve i sa desne strane poravnato*/
+    /* text-indent: 30px; uvod na pocetku */
+    /* text-align-last: right; samo zadnji red centriran u desnu stranu */
+    /* text-transform: none; nece nista da se promeni */
+    /* text-transform: capitalize; svaka rec pocinje velikim slovom */
+    /* text-transform: uppercase; sva slova da stavi velika */
+    /* text-transform: lowercase;sva slova su mala */
+    text-transform: ;
+}
+
+.second{
+    background-color:rgb(0, 255, 76) ;
+    text-align: justify;
+}
+.second: h1nth-of-type(1){
+    text-align:end;
+}
+.second:nth-of-type(2) h1{
+    text-align:end;
+}

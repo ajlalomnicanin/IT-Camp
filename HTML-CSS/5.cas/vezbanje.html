@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formu u HTML </title>
+</head>
+<body>
+   <form method="post" action="/IT camp/HTML-CSS/5.cas/index.html">
+
+    <label for="input-ime">Ime:</label> <!--Jedan od nacina prikaza ime-->
+      <input type="text" name="Ime" id="input-ime">
+
+      <br/>
+      <br/>
+
+<label for="number">Procenat:</label>
+    <input type="number" name="broj" id="number"
+    id step="10" min="10" max="120" value="20"><!--value-predstavlja pocetnu vrednost.-->
+
+    <br/>
+    <br/>
+
+    <label for="email">Unesite vas e-mail:</label>
+    <input type="email" name="email" id="email">
+
+    <br/>
+    <br/>
+
+    <label for="phone">Unesite vas telefonski broj:</label>
+    <input type="tel" name="phone" id="phone">
+
+    <br/>
+    <br/>
+
+    <label for="zaposlen">Da li ste zaposleni:</label>
+    <input type="checkbox" name="zaposlen" id="zaposlen" value="1">
+
+    <br/>
+    <br/>
+
+    <label for="kategorija">Odaberite kategoriju:</label><br/>
+    <input type="radio" name="kategorija" id=kategorija
+    value="1"> Kategorija 1<br/>
+    <input type="radio" name="kategorija" id=kategorija
+    value="2"> Kategorija 2<br/>
+    <input type="radio" name="kategorije" id=kategorija
+    value="3"> Kategorija 3<br/>
+    <br/>
+
+    <label for="adesa">Napisite vasu adresa:
+    </label><br/>
+    <textarea rows="6" name="adresa" id="adresa"></textarea>
+    <br/>
+    <br/>
+
+    <label for="drzava">Drzava></label>
+    <select name=drzava id="drzava">
+        <option value="1">SRBIJA </option>
+        <option value="2">ALBANIJA </option>
+         <option value="3">RUSIJA </option>
+    </select>
+    <br/>
+    <br/>
+
+    <label for="i-drzava">Drzava 2</label>
+    <input type="text" name="drzava2" id="i-drzava" list="spisak drzava">
+    <detalist id="spisak drzava">
+        <option value="SRBIJA">
+            <option value="CRNA GORA">
+                <option value="HRVATSKA">
+    </detalist>
+
+    <br/>
+    <br/>
+   </form> 
+</body>
+</html>

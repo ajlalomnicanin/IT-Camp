@@ -1,0 +1,44 @@
+body {
+  margin: 0px;
+  background-color: #79c0c3;
+}
+.main {
+  background-color: rgba(191, 145, 145, 0.2);
+  /* opacity-sve unutra ce da izbledi , odnono daje prozirnost naseg elementa */
+  /* opacity: 0.3; */
+  width: 500px;
+  height: 400px;
+
+  /* margin: 100px; */
+  /* margin-top: 100px; */
+  /* margin-right: 100; */
+  /* margin-bottom 100px; ; */
+  /* margin-left: 100px; */
+
+  /* definisanje preko margin. gde dodeljujemo vise vrednosti */
+  /* margin: 50px 100px 60px 40px; */
+  /* margin: 60px 90px; */
+  /* margin: 60px 90px 30px; */
+  /* margin: auto; Centriranje teksta */
+  /* margin: 40px auto; */
+  margin: 60px auto 0px;
+
+  /* border:3px solid black; solid obicna ispunjena linija */
+  /* border: 3px double; duplirana linija */
+  /* border: 3px dotted black; */
+  /* border: 3px dashed black; */
+  border: 3px solid black;
+  border-radius: 20px;
+
+  /* padding ista pravila kao kod margine. */
+  padding: 15px 30px;
+}
+/* CSS BOX Model je box koji okruyuje svaki html element. */
+/* Definisanje margine za sve strane  */
+/* Definisane margine za sve cetiri strane */
+
+.main p:nth-of-type(2){
+    background-color: blue;
+    font-size: 24px;
+
+}

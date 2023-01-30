@@ -1,0 +1,82 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+.pre-header {
+  /* text-decoration: none; */
+  background-color: rgb(150, 137, 229);
+  height: 60px;
+  color: #fffff0;
+  padding-top: 15px;
+}
+.container {
+  max-width: 1140px;
+  /* padding-top: 15px; kada podesim pomeri mi se i drugi div*/
+}
+li {
+  /* list-style-type: none; */
+  display: inline-block;
+  margin-left: 15px;
+  text-transform: uppercase;
+  /* text-decoration: none; */
+}
+
+.section {
+  background-image: url("../10.cas/pozadina.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section .container {
+  /* border: 1px solid black; */
+  margin-bottom: 80px;
+  padding: 60px;
+  width: 600px;
+  height: 400px;
+  text-align: center;
+  text-align: justify;
+  color: #fffff0;
+  overflow: auto;
+}
+.section .container a {
+  background-color: rgb(74, 39, 150);
+  padding: 10px;
+  /* border: 1px solid black; */
+  color: #fffff0;
+  text-decoration: none;
+  transition: o.5s;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 20px;
+}
+.section .container a:hover {
+  color: black;
+  background-color: rgb(209, 205, 235);
+}
+
+.section2 {
+  padding-top: 30px;
+  padding-bottom: 100px;
+  margin: auto;
+}
+.section2 h3 {
+  text-align: center;
+}
+.section2 h2 {
+  text-align: center;
+}
+.section2 p {
+  text-align: center;
+}
+
+.row {
+  margin: 50px auto;
+  text-align: center;
+}
+.row img {
+  width: 350px;
+  height: 400px;
+  margin-left: 40px;
+  margin-right: 40px;
+}

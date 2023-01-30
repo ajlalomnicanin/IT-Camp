@@ -1,0 +1,33 @@
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(271, 37%, 79%);
+}
+.first {
+    background-color: rgb(169, 95, 237);
+    height: 100px;
+    background-image:url("./slika.jpg");
+    background-repeat:no-repeat ;
+    /* background-size: 400px 200px; prva na sirinu druga na visinu */
+    /* background-size: 100%; */
+    /* background-size: cover; podjednako je razvlaci i sece deo slike do sledeceg elementa.*/
+    /* background-size: contain; do sledeceg elementa se zavlaci ali ne sece  */
+}
+ul{
+    margin: auto;
+    width: 500px;
+    /* text-align: center; */
+    list-style-position: inside;
+}
+li:nth-of-type(odd) {
+    background-color: aquamarine;
+}
+li:nth-of-type(even) {
+    background-color: rgb(132, 17, 17);
+}
+li:nth-last-child(1) {
+    background-color: antiquewhite;
+}
