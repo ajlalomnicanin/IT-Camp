@@ -1,0 +1,44 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;1,700&display=swap');
+ /* drugi nacin importovanja eksternog fonta slova */
+* {
+    margin: 0;
+}
+body {
+    /* font-family: 'Times New Roman', Times, serif; */
+    /* google font najpoznatiji */
+    font-family: 'Zilla Slab', serif;
+}
+.main {
+    background-color: coral;
+    width: 600px;
+    height: 400px;
+    margin: 50px auto 0px;
+    padding: 20px;
+    /* margin: 50px 10px 0px; */
+    /* display: inline-block; */
+}
+/* .second { */
+    /* display: none; */
+    /* visibility: hidden; */
+/* } */
+.main h1 {
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.main p {
+    font-size: 22px;
+    text-align: justify;
+    text-indent: 20px;
+    text-align-last: right;
+     line-height:30px ;     /* visina izmedju redova */
+
+}
+.icon {
+    color: blue;
+    font-size: larger;
+   margin-left: 50%;
+
+
+}
