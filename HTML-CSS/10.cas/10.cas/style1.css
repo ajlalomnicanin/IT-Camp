@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Oswald&family=Zilla+Slab:ital,wght@0,400;1,700&display=swap');
+* {
+  margin: 0px;
+  border-spacing: 0px;
+}
+table {
+  width: 100%;
+}
+
+.first {
+  background-color: rgb(16, 16, 101);
+  color: #ffffff;
+  height: 50px;
+}
+
+.pre-link {
+  width: 400px;
+}
+
+.link {
+  width: 300px;
+}
+a:hover {
+  color: rgb(205, 164, 164);
+  font-size: larger;
+  text-decoration: double;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.second .services {
+  height: 100px;
+  font-size: 30px;
+}
+
+.third {
+  height: 300px;
+}
+.lorem1 {
+  margin-top: 50px;
+  width: 600px;
+  height: 150px;
+  box-shadow: 10px 10px 5px 10px rgb(191, 182, 182);
+  font-family:font-family: 'Marck Script', cursive;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Zilla Slab', serif; ;
+}
+.lorem1 h3 {
+  text-align: left;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  text-shadow: 5px 5px 5px black;
+}
+.lorem1 p {
+  text-align: unset;
+  text-indent: 15px;
+  list-style-position: inside;
+}
+
+.lorem1:hover {
+  background-color: rgb(16, 16, 101);
+  color: #ffffff;
+}
+
+#second {
+  width: 500px;
+}
+.icon {
+  color: rgb(25, 25, 228);
+  margin-right: 50%;
+  font-size: larger;
+  margin-bottom: 10px;
+}
+.icon:hover {
+  color: #ffffff;
+}
