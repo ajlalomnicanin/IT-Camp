@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Oswald&family=Zilla+Slab:ital,wght@0,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&family=Oswald&family=Zilla+Slab:ital,wght@0,400;1,700&display=swap");
 * {
   margin: 0px;
   border-spacing: 0px;
@@ -32,21 +32,21 @@ a {
 }
 
 .second .services {
-  height: 100px;
+  height: 60px;
   font-size: 30px;
 }
 
 .third {
-  height: 300px;
+  height: 200px;
 }
 .lorem1 {
   margin-top: 50px;
   width: 600px;
   height: 150px;
   box-shadow: 10px 10px 5px 10px rgb(191, 182, 182);
-  font-family:font-family: 'Marck Script', cursive;
-  font-family: 'Oswald', sans-serif;
-  font-family: 'Zilla Slab', serif; ;
+  font-family: "Marck Script", cursive;
+  font-family: "Oswald", sans-serif;
+  font-family: "Zilla Slab", serif;
 }
 .lorem1 h3 {
   text-align: left;
