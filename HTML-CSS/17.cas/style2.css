@@ -1,0 +1,27 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+.parent {
+  background-color: yellow;
+  width: 500px;
+  height: 700px;
+}
+.child-one {
+  width: 100px;
+  height: 100px;
+  background-color: #57c8c8;
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+.child-two {
+  width: 100px;
+  height: 100px;
+  background-color: #860cbb;
+}
+.child-three {
+  width: 100px;
+  height: 100px;
+  background-color: #cf155f;
+}

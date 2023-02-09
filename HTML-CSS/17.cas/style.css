@@ -1,0 +1,48 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+.parent {
+  width: 90%;
+  height: 500vh;
+  background-color: #00ffff;
+  margin: 40px auto 0 px;
+}
+.parent h1 {
+  font-size: 50px;
+}
+.child-one {
+  background-color: rgb(28, 140, 95);
+  height: 130px;
+  /* position: static; je defaultna vrednost pozicioniranja*/
+  /* position: relative; dobijamo 4 nova svojstva: top bottom left right */
+  /* position: relative; */
+  /* top: 40px; */
+  /* left: 40px; */
+  /* position: absolute; ovde moze i u odnosu na parent i u odnosu na stranicu*/
+  position: absolute;
+  top: 20px;
+  left: 500px;
+  z-index: 10;
+}
+.child-two {
+  background-color: rgb(129, 28, 176);
+  height: 130px;
+  position: fixed; /* ne gleda uopste parent, nego u odnosu na stranicu, i zajedno prati stranicu i pomera se */
+  right: 20px;
+  z-index: 20;
+
+}
+.child-three {
+  background-color: rgb(184, 121, 38);
+  height: 130px;
+  position: sticky;
+  top: 4px;
+  /* prilikom pomeranja stranice vidimo njena svojstva  i u odnosu na celu stranicu*/
+}
+.child-four {
+  background-color: blue;
+  height: 130px;
+  position: static;
+  bottom: 0px;
+}
