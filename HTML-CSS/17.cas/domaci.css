@@ -1,0 +1,154 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(https://www3.assets.heroku.com/assets/home/hero/startup-10d700b2164d8d9ceb3934c15f01277c7a4bb2ce9d9c1d14d0bd00d680debafc.png);
+  background-color: rgb(77, 9, 141);
+  background-repeat: no-repeat;
+}
+.preheader {
+  height: 32px;
+  background-color: rgb(219, 233, 238);
+  padding-top: 7px;
+  padding-left: 20px;
+}
+.preheader .icon {
+  color: rgb(89, 204, 236);
+}
+.preheader a {
+  text-decoration: none;
+  color: rgb(10, 57, 95);
+}
+.background {
+  font-family: "BentonSans", "Helvetica Neue", sans-serif;
+}
+.header {
+  color: aliceblue;
+  padding-left: 23%;
+  padding-top: 20px;
+  padding-right: 23%;
+}
+.header2 {
+  /* width: 100vw; */
+  clear: both;
+
+  float: left;
+}
+.header .h1 {
+  border: 2px solid white;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 40px;
+}
+.header .header-right {
+  float: right;
+  /* padding-top: 10px; */
+}
+.btn {
+  color: rgb(255, 255, 255);
+  background-color: hsla(0, 0%, 0%, 0.4);
+  padding: 10px 14px;
+  border: 0px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.header2 {
+  margin-left: 550px;
+  text-align: center;
+  color: white;
+}
+.section2 {
+  width: 55%;
+  height: 1000px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 70px auto;
+  border-radius: 20px;
+  clear: both;
+}
+.section2 .first {
+  width: 40%;
+  height: 300px;
+  padding: 70px 0px;
+  margin: 0px 50px;
+  border-bottom: 1px solid rgba(7, 0, 0, 0.169);
+}
+.first h2 {
+  color: rgb(67, 19, 113);
+  padding-bottom: 20px;
+}
+.nav {
+  width: 30%;
+  height: 950px;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  left: 800px;
+  bottom: 1050px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 30px;
+}
+label {
+  padding-bottom: 10px;
+}
+label:nth-of-type(1) {
+  padding-top: 20px;
+}
+
+input {
+  padding: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.411);
+  border-radius: 5px;
+}
+input:hover {
+  border: 2px solid rgb(67, 19, 113);
+}
+sup {
+  color: rgb(210, 24, 24);
+  font-size: 20px;
+}
+select {
+  padding: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.411);
+  border-radius: 5px;
+}
+select:hover {
+  border: 2px solid rgb(67, 19, 113);
+}
+.robot {
+  padding: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.411);
+  border-radius: 5px;
+}
+.robot {
+  height: 70px;
+}
+.robot:hover {
+  border: 2px solid rgb(67, 19, 113);
+}
+.robot .kockica {
+  border: 1px solid black;
+  width: 20px;
+  height: 20px;
+}
+.iconn {
+  float: right;
+  margin-right: 30px;
+  font-size: 30px;
+  color: rgb(49, 49, 172);
+}
+button {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 14px;
+  border: 0px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: rgb(45, 100, 230);
+  font-size: 15px;
+  color: white;
+}
