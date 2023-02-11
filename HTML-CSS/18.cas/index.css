@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Lobster+Two&family=Marck+Script&family=Oswald&family=Sail&family=Zilla+Slab:ital,wght@0,400;1,700&display=swap");
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Allerta Stencil", sans-serif;
+  font-family: "Lobster Two", cursive;
+  font-family: "Marck Script", cursive;
+  font-family: "Oswald", sans-serif;
+  font-family: "Sail", cursive;
+  font-family: "Zilla Slab", serif;
+}
+.header {
+  width: 100vw;
+  height: 15vh;
+  background-color: aquamarine;
+  position: relative;
+}
+.header img {
+  width: 7vh;
+  height: 10vh;
+  float: left;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+.links {
+  float: right;
+  position: absolute;
+  right: 20px;
+  top: 50px;
+}
+a {
+  background-color: rgb(84, 84, 174);
+  padding: 7px;
+  border-radius: 10px;
+  font-size: 22px;
+  margin: 10px;
+  text-decoration: none;
+  color: rgb(26, 26, 142);
+}
+a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+/* a:visited { */
+  /* background-color: rgb(247, 15, 15); */
+  /* linkovi koji su poseceni */
+
+a:active {
+  background-color: rgb(0, 0, 0);
+  /* trenutno kada pritisnes link */
+}
+button {
+    background-color: blue;
+    color: wheat;
+    padding: 15px;
+    border: 1px solid green;
+    border-radius: 6px;
+    cursor: pointer;
+    cursor: text;
+}
+p {
+  font-size: larger;
+  /* word-spacing: 20px; izmedju svake reci 20px */
+  /* letter-spacing: 20px;izmedju reci */
+  /* line-height:20px ;razmak izmedju redova */
+}
+.iconn {
+  text-align: center;
+  color: #000000;
+  font-size: 100px;
+  
+  border-radius: 50%;
+}
