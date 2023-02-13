@@ -1,0 +1,22 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Allerta Stencil", sans-serif;
+  font-family: "Lobster Two", cursive;
+  font-family: "Marck Script", cursive;
+  font-family: "Oswald", sans-serif;
+  font-family: "Sail", cursive;
+  font-family: "Zilla Slab", serif;
+}
+header {
+    height: 15vh;
+}
+header img {
+  width: 200px;
+  height: 200px;
+}
+header a {
+
+}
