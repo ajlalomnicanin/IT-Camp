@@ -1,0 +1,63 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Allerta Stencil", sans-serif;
+  font-family: "Lobster Two", cursive;
+  font-family: "Marck Script", cursive;
+  font-family: "Oswald", sans-serif;
+  font-family: "Sail", cursive;
+  font-family: "Sono", sans-serif;
+  font-family: "Zilla Slab", serif;
+}
+.parent {
+  margin: auto;
+  width: 60%;
+  height: 80vh;
+  background-color: rgb(58, 86, 71);
+  display: flex;
+  /* flex-direction: row; defaultna vrednost */
+  /* flex-direction: column; kolona */
+
+  /* horizontalno poravnjanje; */
+  /* justify-content: flex-start; */
+  /* justify-content: flex-end; defaultna vrednost horozintalnog poravnjanja */
+  /* justify-content: center; centrirano */
+  /* justify-content: right;desno  */
+  /* justify-content: space-between;krajevi popunjeni sa pojednim a ostavi po sredini podjednako */
+  /* justify-content: space-around; jednako se uvlaci na pocetku i na kraju a u sredini je veci razmak  */
+  /* justify-content: space-evenly; podjednak razmak izmedju svih */
+  justify-content: space-evenly;
+
+  /* Vertikalno poravljanje: */
+  /* align-items: flex-start;  */
+
+  align-items: center;
+  /* align-items: flex-end; */
+}
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(240, 255, 255);
+}
+.box:nth-of-type(1) {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(240, 255, 255);
+  align-self: flex-start;
+}
+.box:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  background-color: rgb(123, 163, 163);
+}
+.box:nth-of-type(3) {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(102, 114, 114);
+  align-self: flex-end;
+}
