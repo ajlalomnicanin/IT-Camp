@@ -1,0 +1,36 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+.parent {
+  margin: auto;
+  background-color: aqua;
+  width: 500px;
+  height: 500px;
+}
+.child {
+  width: 50%;
+  height: 50%;
+  background-color: rosybrown;
+  /* border-radius: 50%; */
+  transition: transform 1.0s cubic-bezier(0.4, 0, 1, 1) 2s;
+  /* transition-property:transform ;na koji se property odnosi  */
+  /* transition-duration:1s ;trajanje transformacije */
+  /* transition-timing-function: ease-in-out;funkcija po kosjoj se vrsi transformacija  */
+  transition-duration: ;
+}
+.parent:hover .child {
+      /* transform: translateX(100%);pomeranje po X osi */
+    /* transform: translateY(100%);pomeranje po y osi */
+  transform: translate(100%, 100%);
+  /* pomeranje po x i y osi */
+  /* transition: transform 1.0s ease-in-out; samo kada predjemo misem */
+  background-color: blue;
+}
+
+/* .child:hover {
+  /* transform: scale(1.2); jedna vrednost povecava odnosno smanjuje element na 
+  osnovu unete vrednosti proporcijalno po x i y osi
+     */
+/* transform: scale(1.2, 0.5); */
+/* ako imame dve vrednisti prva se odnosi na x a druga na y osu */
