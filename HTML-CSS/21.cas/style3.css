@@ -1,0 +1,45 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+.parent {
+  margin: auto;
+  background-color: aqua;
+  width: 500px;
+  height: 500px;
+}
+.child {
+  width: 50%;
+  height: 50%;
+  background-color: rosybrown;
+}
+.parent:hover .child {
+  /* animation: top-to-bottom 1.3s ease-in 0.5s forwards 3 alternate; */
+  /* forwards da ostane da to mesto da se ne vraca
+  /* .koliko se puta ponavlja 2 puta  */
+  animation: top-to-bottom 2.3s ease-in 0.5s forwards infinite alternate;
+  /* beskonacno */
+  /* animation-play-state: paused; */
+  /* kada predjem misem prestace da se krece  */
+}
+@keyframes top-to-bottom {
+  0% {
+    transform: translateX(0%);
+  }
+  33% {
+    transform: translateX(100%);
+    background-color: blueviolet;
+  }
+  50% {
+    transform: translate(50%, 50%);
+    background-color: aquamarine;
+  }
+  66% {
+    transform: translate(100%, 100%);
+    background-color: brown;
+  }
+  100% {
+    transform: translateX(0%);
+    transform: translateY(100%);
+  }
+}
