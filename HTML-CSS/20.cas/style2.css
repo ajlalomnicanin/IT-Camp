@@ -98,15 +98,21 @@ article {
   width: 250px;
   height: 550px;
   background-color: rgb(223, 238, 252);
-  display: flex;
+
+  justify-items: center;
   margin-top: 150px;
+  transition: width 2s, height 2s, transform 2s;
+}
+article:hover {
+  width: 350px;
+  height: 650px;
+  transform: rotate(120deg);
 }
 article div {
   text-align: center;
 }
 article h1 {
   padding-top: 40px;
-
   padding-bottom: 10px;
 }
 
@@ -127,9 +133,9 @@ article p {
 }
 main {
   display: flex;
-  justify-content: space-around;
+  gap: 20px;
+  place-content: center;
 }
-
 footer {
   margin-top: 80px;
   width: 100%;
@@ -141,14 +147,22 @@ footer {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  transition: width 2s, height 2s, transform 2s;
 }
 .child2 {
   background-color: black;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  float: right;
+  position: absolute;
+  right: 0;
 }
 
 .child1:hover {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transform: translateX(900px);
+}
+.child2:hover {
 }

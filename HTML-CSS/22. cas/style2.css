@@ -1,0 +1,41 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(127, 176, 255);
+}
+.parent {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(46, 86, 205);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 100px;
+}
+@media (min-width: 501px) and (max-width: 681px) {
+  .parent {
+    background-color: rgb(65, 94, 94);
+  }
+}
+/* @media (width: 522px), (width: 681px) {
+  .parent {
+    background-color: rgb(95, 77, 77);
+    color: red;
+  }
+} */
+@media (max-width: 500px) {
+  .parent {
+    background-color: rgb(66, 16, 63);
+    color: rgb(172, 144, 198);
+  }
+}
+/* @media (orientation: landscape
+portret portrait za telefone) { 
+    .parent {
+        background-color: brown;
+    }
+} */

@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  
+  header {
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(23, 76, 139);
+  }
+  .main-header {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .links ul {
+      width: 500px;
+      height: 60px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+  
+  }
+  .links a {
+      text-decoration: none;
+      color: rgb(21, 21, 21);
+      font-size: larger;
+      font-weight: 600;
+      /* za debljinu slova  */
+      background-color: rgb(148, 216, 216);
+      padding: 10px;
+      border-radius: 10px;
+  }
+  main {
+      min-height: 75vh;
+  }
+  footer {
+      background-color: rgb(2, 62, 99);
+      width: 100%;
+      height: 10vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
