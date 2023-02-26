@@ -101,12 +101,12 @@ article {
 
   justify-items: center;
   margin-top: 150px;
-  transition: width 2s, height 2s, transform 2s;
+  /* transition: width 2s, height 2s, transform 2s; */
 }
 article:hover {
   width: 350px;
   height: 650px;
-  transform: rotate(120deg);
+  /* transform: rotate(120deg); */
 }
 article div {
   text-align: center;
@@ -143,26 +143,30 @@ footer {
   background-color: rgb(20, 20, 100);
 }
 .child1 {
-  background-color: black;
+  background-color: rgb(221, 221, 221);
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  transition: width 2s, height 2s, transform 2s;
+  transition: transform 2s ease-in-out;
 }
 .child2 {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   position: absolute;
   right: 0;
+  transition: transform 2s ease-in-out;
 }
 
 .child1:hover {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  transform: translateX(900px);
 }
-.child2:hover {
+.parent:hover .child1 {
+  transform: translateX(1465px);
+}
+.parent:hover .child2 {
+  transform: translateX(-1465px);
 }
