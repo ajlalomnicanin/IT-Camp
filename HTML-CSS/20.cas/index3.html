@@ -44,21 +44,22 @@
           <a href="./photo.jpg"> Health and Fitness </a>
         </div>
       </div>
-
       <div class="right">
-        <div>
-          <div class="one">
-            <i class="fa-solid fa-chart-simple"> Popularity</i>
+        <div class="one">
+          <div class="onee">
+            <i class="fa-solid fa-chart-simple"></i> Popularity
           </div>
-          <div>0.1 / 10</div>
+          <div class="two"><b>0.1 / 10</b></div>
         </div>
         <div class="one">
-          <i class="fa-regular fa-clock"> Latency</i>
-          <div>39ms</div>
+          <div class="onee"><i class="fa-regular fa-clock"></i> Latency</div>
+          <div class="two"><b>39ms</b></div>
         </div>
         <div class="one">
-          <i class="fa-solid fa-check"> Service Level</i>
-          <div>0%</div>
+          <div class="onee">
+            <i class="fa-solid fa-check"></i> Service Level
+          </div>
+          <div class="two"><b>0%</b></div>
         </div>
       </div>
     </div>
@@ -69,5 +70,93 @@
       <a href="./logo33.jpg">Discussions</a>
       <a href="./logo33.jpg">Pricing</a>
     </nav>
+
+    <section>
+      <h2 class="h2">Worldometer Covid 19 API Documentation</h2>
+      <p class="p">
+        This Freemium API that provides Covid 19 statistics from
+        <a href="https://www.worldometers.info/coronavirus/">
+          https://www.worldometers.info/coronavirus/
+        </a>
+      </p>
+      <p class="p">
+        This API periodically updates live data from
+        <a href="https://www.worldometers.info/coronavirus/#countries"
+          >https://www.worldometers.info/coronavirus/#countries.</a
+        >
+      </p>
+    </section>
+    <div class="sectionn">
+      <div class="twooo">
+        <div class="twoo">
+          <button>
+            <i class="fa-solid fa-magnifying-glass iconn"></i> Search endpoints
+          </button>
+          <!-- <label for="search"></label>
+          <input
+            type="search"
+            id="search"
+            name="search"
+            placeholder="Search endpoints"
+          /> -->
+        </div>
+        <p>GET GetCountries</p>
+        <p>GET GetCovidStatus</p>
+      </div>
+
+      <div class="two">
+        <div>
+          <h3>GET</h3>
+          <h3>GetCovidStats</h3>
+        </div>
+        <div>
+          <button>
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            <a
+              href="https://rapidapi.com/auth/sign-up?referral=/Shouvik/api/worldometer-covid-19/"
+              >Test Endpoint</a
+            >
+          </button>
+        </div>
+
+        <div>
+          <div>
+            <p>
+              List all COVID-19 countries and their country codes. The country
+              code will be required to get Statistics for the specific country.
+            </p>
+            <p>Parameters : -</p>
+            <p>sorted : Show countries sorted alphabetically.</p>
+          </div>
+          <div>
+            <p></p>
+            <label for="search">Request URL</label>
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="rapidapi.com"
+            />
+            <br />
+            <label for="search">REQUIRED</label>
+          </div>
+
+          <div>
+            <label for="parameters"></label>
+            <select id="parameters" name="parameters">
+              <option value="Header Parameters" selected>
+                Header Parameters
+              </option>
+              <option value="Optional Parameters">Optional Parameters</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="two">
+        <a href="#">Code Snippets</a>
+        <a href="#">Example Responses</a>
+        <a href="#">Results</a>
+      </div>
+    </div>
   </body>
 </html>

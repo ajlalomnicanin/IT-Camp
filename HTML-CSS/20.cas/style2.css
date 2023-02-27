@@ -170,3 +170,12 @@ footer {
 .parent:hover .child2 {
   transform: translateX(-1465px);
 }
+
+@media (max-width: 500px;) {
+  header {
+    width: 100%;
+    /* height: 200px; */
+    display: flex;
+    flex-direction: column;
+  }
+}
