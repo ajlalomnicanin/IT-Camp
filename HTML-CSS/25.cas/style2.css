@@ -1,0 +1,53 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+.parent {
+  margin: auto;
+  width: 800px;
+  /* height: 1000px; */
+  background-color: rgb(214, 233, 109);
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-auto-rows: minmax(180px, auto);
+  grid-gap: 20px;
+  /* Horizontalno poravnjanje: 
+   */
+   /* justify-content: center; */
+   /* justify-content: space-around; */
+   /* justify-content: start; */
+   /* justify-content: end; */
+   justify-content: space-around;
+   justify-items: center;
+
+   /* Vertikalno poravnjanje: */
+   /* align-content: end; */
+   align-content: space-between;
+   align-items: center;
+
+}
+.child {
+  /* width: 150px; */
+  /* height: 150px; */
+}
+.first {
+  background-color: rgb(136, 0, 255);
+}
+.second {
+  background-color: rgb(136, 17, 122);
+}
+.third {
+  background-color: rgb(176, 22, 94);
+}
+.fourth {
+  background-color: rgb(211, 73, 82);
+}
+.fifth {
+  background-color: aquamarine;
+}
+.sixth {
+  background-color: bisque;
+}
+.seventh {
+  background-color: rgb(96, 89, 89);
+}
