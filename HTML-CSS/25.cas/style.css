@@ -1,0 +1,71 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+.parent {
+  margin: auto;
+  width: 800px;
+  /* height: 1000px; */
+  background-color: rgb(214, 233, 109);
+  display: grid;
+  /* Sledeca svojstva nam definisu koliko cemo imati kolona i kojih sirina */
+  /* grid-template-columns: 200px 150px; */
+  /* grid-template-columns: 1fr 1fr 2fr; */
+  grid-template-columns: repeat(3, 200px);
+
+  /* Sledecce svojstvo nam definise koliko ce imati redova i kojih visina. */
+  /* grid-template-rows: 200px 150px  ; */
+  /* min-max() funkcija zahteva dva argumenta, gde prvi predstavlja minimalnu visinu, 
+    a drugi maximalnu visinu reda (u slucaju potrebe za povecanjem ) */
+  grid-auto-rows: minmax(180px, auto);
+
+  /* razmak izmedju redova */
+  /* grid-row-gap: 15px; */
+
+  /* razmak izmedju kolona */
+  /* grid-column-gap: 25px; */
+
+  /* razmak izmedju redova i kolona */
+  grid-gap: 20px;
+}
+.child {
+  /* width: 150px; */
+  /* height: 150px; */
+}
+.first {
+  background-color: rgb(136, 0, 255);
+  /* grid-column-start: 1; */
+  /* grid-column-end: 3; */
+  grid-column: 1/3;
+  /*  */
+}
+.second {
+  background-color: rgb(136, 17, 122);
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  
+  grid-area:1/3/3/4 ;
+}
+.third {
+  background-color: rgb(176, 22, 94);
+
+}
+.fourth {
+  background-color: rgb(211, 73, 82);
+}
+.fifth {
+  background-color: aquamarine;
+  /* grid-column: 1/4; */
+  /* Spajanje kolona (ukljucujuci poslednju) moze se izvrsiti preko indeksa -1 */
+  grid-column: 1/-1;
+}
+.sixth {
+  background-color: bisque;
+  /* Spajanje redova i kolona se moze izvrsiti preko span sintakse  na sledeci nacin */
+  grid-column: span 2;
+}
+.seventh {
+  background-color: black;
+}
