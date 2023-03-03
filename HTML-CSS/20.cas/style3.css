@@ -173,13 +173,150 @@ a {
   display: flex;
 }
 .twooo {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   width: 33%;
+  border-right: 3px solid white;
   /* height:70px ; vrati se posle */
+  height: 100vh;
+  font-size: 14px;
+}
+.twoo {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(33, 37, 43);
+  border-bottom: 1px solid #424246;
 }
 .twoo button {
   width: 90%;
   height: 40px;
-  background-color: #3d4248;
+  margin: 15px 5%;
+  text-align: left;
+  background-color: #31353a;
+  color: #9da0a8;
+  font-size: 14px;
+  border: 1px solid #424246;
+  border-radius: 4px;
+}
+.twoo button:hover {
+  border: 1px solid rgb(16, 119, 203);
+}
+.flex {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(33, 37, 43);
+  border: none;
+}
+.flex1 {
+  background-color: rgb(37, 38, 46);
+}
+.flex:hover {
+  background-color: rgb(13, 15, 34);
+}
+.flex h6 {
+  color: rgb(42, 128, 55);
+  padding: 0px 10px;
+  margin: auto 0px;
+}
+.flex p {
+  color: aliceblue;
+  margin: auto 0px;
+}
+.three {
+  color: aliceblue;
+  margin: auto 0px;
+  font-size: 14px;
+}
+.three h3 {
+  padding-left: 20px;
+}
+.twoo {
+  display: flex;
+}
+.btn {
+  width: 180px;
+  margin-left: 100px;
+}
+.btn i {
+  margin: 0px 10px;
+}
+.paragraf {
+  color: white;
+}
+.paragraf p {
+  margin: 20px;
+}
+.label1 {
+  border-top: 1px solid #2f2f31;
+  color: aliceblue;
+  padding: 20px;
+  padding-right: 7px;
+}
+
+.label1 input {
+  width: 250px;
+  height: 30px;
+  background-color: #2a3038;
+  border: 1px solid #3e3e4a;
+  border-radius: 3px;
+  padding-left: 10px;
+  margin-left: 80px;
+}
+
+.label1 a {
+  padding-left: 170px;
+}
+.parameters {
+  width: 100%;
+  height: 45px;
+  background-color: rgb(33, 37, 43);
+  color: aliceblue;
+  padding-top: 16px;
+  padding-left: 30px;
+}
+.label1 select {
+  width: 250px;
+  height: 30px;
+  background-color: #2a3038;
+  border: 1px solid #3e3e4a;
+  border-radius: 3px;
+  padding-left: 10px;
+}
+.labell input {
+  margin-left: 160px;
+}
+.labell p {
+  color: #777a80;
+}
+.labell {
+  border: none;
+}
+.optional {
+  width: 100%;
+  margin-top: 30px;
+  color: aliceblue;
+}
+.end1 {
   
+  width:100%;
+  height: 70px;
+  background-color: rgb(33, 37, 43);
+  border-bottom: 1px solid #424246;
+}
+.end1 a {
+  /* ovde */
+  padding: 20px;
+}
+.btn1 {
+  margin-top: 30px;
+  margin-left: 15px;
+  width: 120px;
+  height: 20px;
+  background-color: #31353a;
+  color: aliceblue;
+  border-radius: 5px;
+  border: 1px solid #777a80;
+}
+.btn1:hover {
+  border: 1px solid rgb(3, 125, 201);
 }

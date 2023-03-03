@@ -86,41 +86,46 @@
         >
       </p>
     </section>
+
     <div class="sectionn">
       <div class="twooo">
         <div class="twoo">
           <button>
             <i class="fa-solid fa-magnifying-glass iconn"></i> Search endpoints
           </button>
-          <!-- <label for="search"></label>
-          <input
-            type="search"
-            id="search"
-            name="search"
-            placeholder="Search endpoints"
-          /> -->
         </div>
-        <p>GET GetCountries</p>
-        <p>GET GetCovidStatus</p>
+
+        <div class="flex">
+          <h6>GET</h6>
+          <p>GetCountries</p>
+        </div>
+
+        <div class="flex flex1">
+          <h6>GET</h6>
+          <p>GetCovidStatus</p>
+        </div>
       </div>
 
-      <div class="two">
-        <div>
-          <h3>GET</h3>
-          <h3>GetCovidStats</h3>
-        </div>
-        <div>
-          <button>
-            <i class="fa-solid fa-arrow-right-arrow-left"></i>
-            <a
-              href="https://rapidapi.com/auth/sign-up?referral=/Shouvik/api/worldometer-covid-19/"
-              >Test Endpoint</a
-            >
-          </button>
+      <div class="twooo">
+        <div class="twoo">
+          <div class="three" style="display: flex">
+            <h3 style="color: rgb(42, 128, 55)">GET</h3>
+            <h3>GetCovidStatus</h3>
+          </div>
+          <div class="btn">
+            <button style="color: aliceblue">
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+              <a
+                style="color: aliceblue"
+                href="https://rapidapi.com/auth/sign-up?referral=/Shouvik/api/worldometer-covid-19/"
+                >Test Endpoint</a
+              >
+            </button>
+          </div>
         </div>
 
-        <div>
-          <div>
+        <div class="bottom">
+          <div class="paragraf">
             <p>
               List all COVID-19 countries and their country codes. The country
               code will be required to get Statistics for the specific country.
@@ -128,35 +133,68 @@
             <p>Parameters : -</p>
             <p>sorted : Show countries sorted alphabetically.</p>
           </div>
-          <div>
-            <p></p>
+
+          <div class="label1">
             <label for="search">Request URL</label>
             <input
+              style="color: aliceblue"
               type="search"
               name="search"
               id="search"
               placeholder="rapidapi.com"
             />
             <br />
-            <label for="search">REQUIRED</label>
+            <a href="#">REQUIRED</a>
           </div>
 
-          <div>
-            <label for="parameters"></label>
-            <select id="parameters" name="parameters">
-              <option value="Header Parameters" selected>
-                Header Parameters
-              </option>
-              <option value="Optional Parameters">Optional Parameters</option>
-            </select>
+          <div class="parameters">
+            <p>Header Parameters</p>
+          </div>
+          <div class="label1 labell">
+            <label for="parameters">X-RapidAPI-Key</label>
+            <input
+              style="color: aliceblue"
+              type="search"
+              name="search"
+              id="search"
+              placeholder="SING-UP-FOR-KEY"
+            />
+            <br />
+            <p>ENUM</p>
+            <a href="#">REQUIRED</a>
+          </div>
+          <div class="label1 labell">
+            <label for="parameters">X-RapidAPI-Host</label>
+            <input
+              style="color: aliceblue"
+              type="search"
+              name="search"
+              id="search"
+              placeholder="SING-UP-FOR-KEY"
+            />
+            <br />
+            <p>STRING</p>
+            <a href="#">REQUIRED</a>
+            <div class="parameters optional">
+              <p>Optional Parameters</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="two">
-        <a href="#">Code Snippets</a>
-        <a href="#">Example Responses</a>
-        <a href="#">Results</a>
-      </div>
+      <div class="end">
+        <div class="end1">
+          <a style="color: rgb(0, 68, 255)" href="#">Code Snippets</a>
+          <a style="color: aliceblue" href="#">Example Responses</a>
+          <a style="color: gray" href="#">Results</a>
+        </div>
+        <button class="btn1"> (Node.js) Axios </button>
+       <div >
+         <p class="svetlo plava">const </p> 
+         <p class="tamno plava">axios </p> =
+         <p>require</p>
+         <p>("axios");</p>
+     </div>
+      
     </div>
   </body>
 </html>
