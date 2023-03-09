@@ -1,12 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Inconsolata&family=Lobster+Two&family=Marck+Script&family=Oswald&family=Sail&family=Sono&family=Zilla+Slab:ital,wght@0,400;1,700&display=swap");
+
 * {
   margin: 0px;
   box-sizing: border-box;
+}
+body {
+  font-family: "Allerta Stencil", sans-serif;
+  font-family: "Inconsolata", monospace;
+  font-family: "Lobster Two", cursive;
+  font-family: "Marck Script", cursive;
+  font-family: "Oswald", sans-serif;
+  font-family: "Sail", cursive;
+  font-family: "Sono", sans-serif;
+  font-family: "Zilla Slab", serif;
 }
 .site {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 7vh 7vh 70vh 300px 300px;
+  grid-template-rows: 7vh 7vh 50vh  400px 400px;
   /* grid-auto-rows: 200px;
      */
   grid-gap: 5px;
@@ -15,17 +27,29 @@
 .header1 {
   background-color: rgb(255, 255, 255);
   display: grid;
- grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 200px;
-grid-template-rows: 1fr;
-margin: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 100px;
+  grid-template-rows: 1fr;
+  margin: auto;
   grid-column: 1/-1;
+  position: sticky;
+  top: 0px;
 }
-.header1 .a  {
+.header1 img {
+  transform: 1s;
+}
+.header1 img:hover {
+  transform: scale(1.3);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.header1 .a {
   display: flex;
-margin-left: 200px;
-width: 150px;
-margin-top: 16px;
-gap: 10px;
+  margin-left: 200px;
+  width: 150px;
+  margin-top: 16px;
+  gap: 10px;
 }
 .header1 .a a {
   color: rgb(75, 10, 135);
@@ -34,7 +58,7 @@ gap: 10px;
 
 .header2 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 350px 1fr ;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 350px 1fr;
   grid-template-rows: 1fr;
   align-items: center;
   padding-left: 300px;
@@ -51,20 +75,23 @@ gap: 10px;
   width: 150px;
   position: absolute;
   left: 0px;
-  border-radius: 0px 250px 250px 0px  ;
+  border-radius: 0px 250px 250px 0px;
+  transform: 1s;
+}
+.header2 img:hover {
+  transform: scale(1.2);
 }
 .header2 .end {
-  height: 30px ;
+  height: 30px;
   padding: 5px;
 
   margin-left: 70px;
   border-right: 2px solid rgb(100, 99, 99);
-  border-left: 2px solid rgb(100, 99, 99) ;
+  border-left: 2px solid rgb(100, 99, 99);
 }
 .header2 i {
   color: white;
   padding-left: 10px;
-
 }
 section {
   background-image: url(./background.jpg);
@@ -74,20 +101,108 @@ section {
   display: grid;
   grid-template-columns: 1fr 400px 350px 1fr;
   grid-template-rows: 1fr;
- align-items: center;
+  align-items: center;
 }
 section h1 {
   font-size: 80px;
   color: rgb(255, 255, 255);
-
+  margin-left: 50px;
+  margin-top: 80px;
 }
 section button {
   height: 50px;
-  width: 500px;
-  background-color: rgba(0, 0, 0,0.4);
+  width: 450px;
+  background-color: rgba(0, 0, 0, 0.4);
   border: none;
-
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 95px;
+  font-size: 15px;
 }
+section p {
+  padding: 14px 0px 0px 7px;
+}
+section .icon {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(250, 250, 250);
+  margin: auto 0px;
+  padding-top: 8px;
+  color: rgb(70, 7, 130);
+  border-radius: 50%;
+}
+
+/* article {
+  grid-column: 1/-1;
+  background-color: red; */
+
+.btn {
+  background-color: white;
+  color: rgb(70, 7, 130);
+  width: 110px;
+  margin-left: 120px;
+  border: 1px solid rgb(42, 39, 39);
+}
+.btn p {
+  padding-top: 15px;
+  padding-right: 15px;
+}
+.btn i {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+/* article {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 300px 500px 300px;
+  grid-template-rows: 300px;
+  grid-column: 1/-1; */
+
 .card {
-  background-color: rgb(251, 255, 34);
+  background-color: rgb(161, 15, 98);
+  text-align: center;
+  color: white;
+}
+.card .icon {
+  width: 100px;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  bottom: 50px;
+}
+.card h2 {
+  padding-bottom: 30px;
+}
+.card h3 {
+  padding-top: 30px;
+}
+.card .text {
+  position: relative;
+  bottom: 50px;
+}
+.card .mein {
+  width: 100%;
+  height: 200px;
+  transition: 1s;
+}
+.card .mein:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card3 {
+  background-color: rgb(152, 82, 82);
+}
+.card5,
+.card6,
+.card8 {
+  background-color: rgb(60, 60, 171);
+}
+.card9,
+.card10 {
+  background-color: rgb(196, 205, 212);
 }
