@@ -1,0 +1,290 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  height: 2500px;
+}
+.background {
+  background-image: url("./hero-bg.jpg");
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header {
+  height: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  position: sticky;
+  top: 0px;
+  font-family: "Open Sans", sans-serif;
+  background-color: rgba(68, 68, 68, 0.6);
+}
+.header p {
+  font-size: 30px;
+  font-weight: bold;
+}
+.header span {
+  color: rgb(255, 193, 7);
+}
+.link a {
+  font-weight: 400;
+  font-size: large;
+  color: rgb(255, 255, 255);
+  text-decoration-line: none;
+  padding: 20px;
+}
+.link a:hover {
+  color: rgb(255, 193, 7);
+}
+.header button {
+  width: 130px;
+  height: 40px;
+  border: 3px solid rgb(255, 193, 7);
+  border-radius: 3px;
+  font-size: 15px;
+  color: white;
+  background: transparent;
+}
+.center {
+  margin: auto;
+  color: white;
+}
+
+.center .p {
+  font-size: 60px;
+  font-weight: bold;
+}
+.center .p span {
+  color: rgb(255, 193, 7);
+}
+.center p {
+  font-size: 25px;
+  font-weight: bold;
+}
+.cards {
+  display: flex;
+  /* flex-direction: row; */
+  /* justify-content: space-evenly; */
+
+  margin: auto;
+  margin-bottom: 200px;
+}
+.card {
+  border: 1px solid #666667;
+  height: 150px;
+  width: 200px;
+  margin-right: 40px;
+}
+.card:hover {
+  border: 1px solid rgb(255, 193, 7);
+}
+.card,
+i,
+.cardp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card i {
+  color: rgb(255, 193, 7);
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+.card .cardp {
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: larger;
+}
+.section1 {
+  margin: 100px;
+  display: flex;
+  flex-direction: row;
+}
+.sectionn1 h1,
+p {
+  padding: 10px;
+}
+.sectionn1 h1 {
+  font-weight: 800;
+}
+.sectionn1 .iconn i {
+  color: rgb(255, 193, 7);
+  position: relative;
+  top: 30px;
+  right: 10px;
+}
+.article {
+  margin: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.right {
+  margin-top: 30px;
+}
+.right .main {
+  height: 110px;
+  display: flex;
+}
+.main i {
+  color: rgb(255, 193, 7);
+  font-size: 40px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+.sieber p {
+  color: #48484d;
+}
+.first {
+  margin: 100px;
+}
+.service h4 {
+  color: #505051;
+}
+.service hr {
+  width: 120px;
+  border: 1px solid rgba(255, 193, 7, 0.4);
+  position: relative;
+  left: 90px;
+  bottom: 9px;
+}
+.parent {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.parent .child {
+  border: 1px solid #c1c1cb;
+  width: 400px;
+  height: 300px;
+  margin-bottom: 40px;
+  transition: 1s;
+}
+.parent .child:hover {
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: scale(1.1);
+}
+.parent i,
+h2,
+.par {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parent i {
+  background-color: rgb(255, 193, 7);
+  font-size: 20px;
+  border: 1px solid rgb(255, 193, 7);
+  border-radius: 4px;
+  height: 70px;
+  width: 70px;
+  margin: auto;
+  margin-top: 50px;
+}
+.parent h2 {
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+.parent h2:hover {
+  color: rgb(255, 193, 7);
+  text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.parent .par {
+  text-indent: 20px;
+  text-align-last: center;
+  margin: 10px;
+}
+
+.photo {
+  background-image: url("./photo3.jpg");
+  height: 300px;
+  color: white;
+  text-align: center;
+}
+.photo .naslov,
+.paragraf,
+.dugme {
+}
+.photo .naslov {
+  font-weight: bolder;
+  font-size: 30px;
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+.photo .paragraf {
+  font-size: 17px;
+}
+.photo .dugme {
+  width: 200px;
+  height: 40px;
+  margin-top: 20px;
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+.photo .dugme:hover {
+  background-color: rgb(255, 193, 7);
+  border: none;
+  color: rgba(0, 0, 0);
+}
+.grid {
+  margin-top: 50px;
+}
+.grid .link {
+  margin: 15px;
+  margin-left: 600px;
+}
+.grid .link a {
+  color: rgb(34, 33, 33);
+}
+.grid .link a:hover {
+  background-color: rgb(255, 193, 7);
+}
+.grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.grid1 {
+}
+/*  */
+.second {
+  margin: 100px;
+  display: flex;
+}
+.second .second1 {
+  margin-left: 50px;
+}
+.second .second-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.second .second-bottom .card1 {
+  display: flex;
+}
+.second .second-bottom .card1 i {
+  color: rgb(255, 193, 7);
+ font-size: 40px;
+  position: relative;
+  top: 10px;
+  right: 7px;
+}
+.second .second-bottom .card1 h1 {
+  font-weight: bold;
+}
+.second .second-bottom .card1 span {
+  font-weight: bold;
+}
