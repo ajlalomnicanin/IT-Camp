@@ -9,10 +9,12 @@ tekst.innerHTML = "<em>Da li se vidi paragaraf.<em>";
 // Tipovi podataka //
 
 // Postoje //
-// 1.primitivni - vrednosni tipovi podataka//
-// 2.neprimitivni- referentni tipovi podataka//
+// 1.Primitivni - vrednosni tipovi podataka//
+// 2.Neprimitivni- referentni tipovi podataka//
 
 // Za proveru tipova odredjene promenljive - varijable se koristi typeof operator.//
+
+//TYPEOF
 
 // PRIMITIVNE VREDNOSNI TIPOVI PODATAKA//
 
@@ -36,6 +38,7 @@ console.log(typeof BigInt(23443234323));
 // false
 console.log(true);
 console.log(typeof true);
+console.log("-----")
 
 // 5. undefined- Promenljiva koja je definisana u memoriji ali joj nije dodeljena vrednost  ima:
 // tip: underfined i
@@ -45,6 +48,7 @@ var a;
 
 console.log(a);
 console.log(typeof a);
+console.log("-----")
 
 // 6. null- Nepostojeca ili nekoretna promenljiva ima vrednost null.
 // Tip promenljive cija je vrednost null u JS je object.

@@ -1,8 +1,8 @@
 /// Neku poruku u JavaScriptu mozemo prikazati na vise nacina:
 
 // 1. innerHTML
-naslov = document.getElementById ("Naslov");
-naslov.innerHTML = "Prvi nacin ispisa";
+naslov = document.getElementById("naslov").innerHTML = "Prvi nacin ispisa";
+// naslov.innerHTML = "Prvi nacin ispisa";
 
 // 2. document.write - obicno se koristi za testiranje koda.
 
@@ -23,7 +23,7 @@ console.log("Poruka u konzoli.");
 
 // JavaScripta je case sensitive (razlikuje velika i mala slova)
 
-a = 10
+a = 10;
 // console.log(A); error - a is not defined
 console.log(a); // 10
 
@@ -36,17 +36,17 @@ vecernjiTermin = 19.3; // ispravan nacin zapisivanja promenljive - Najcesce kori
 // deklaracija i inicijalizacija
 // Postoje cetiri nacina deklaracije u JS:
 
-// 1.Koriscenje var rezervisane reci (keyword).Vise je ranije bila koridcena dok nismo dobili nove dve.
+// 1.Koriscenje var rezervisane reci (keyword).Vise je ranije bila koriscena dok nismo dobili nove dve.
 var a; //deklarisanje promenljive (obezbedjivanje lokacijske memorije za promenljivu a )
-a = 10 //inicijalizacija promenljive (dodeljuje vrednost vec deklarisanoj promenljivoj a)
-console.log(a)
+a = 10; //inicijalizacija promenljive (dodeljuje vrednost vec deklarisanoj promenljivoj a)
+console.log(a);
 
 // Kroz jednu liniju koda moze izvrsiti deklaraciju i inicijalizaciju
-var a = 10 //Smesti tu promenljivu u memoriji i dodeli joj vrednost 10
+var a = 10; //Smesti tu promenljivu u memoriji i dodeli joj vrednost 10
 
 // 2.Koriscenjem let rezervisane reci (keyword).Promenljive koje su sklone menjanju vrednosti.
-let b; //deklarisana promenljive b
-b = 14; //inicijalizacija promenljive b
+// let b; //deklarisana promenljive b
+// b = 14; //inicijalizacija promenljive b
 
 // Kroz jednu liniju koda moze izvrsiti deklaraciju i inicijalizaciju
 let b = 14; //Smesti tu promenljivu u memoriji i dodeli joj vrednost 14
@@ -55,7 +55,7 @@ console.log(b);
 // 3.Koriscenjem const rezervisane reci (keyword). Na ovaj nacin definisemo promenljive cija se vrednost nece menjati.
 // Nije moguce posebno deklaraciju ili inicijalizaciju napisati odnojeno
 // const c;
-// c = 20 
+// c = 20
 // NEPRAVILNO
 
 // Neophodno je odjednom izvrsiti deklaraciju i inicijalizaciju
@@ -64,11 +64,6 @@ console.log(c);
 
 // 4.Koriscenjem nicega
 d = 5;
-console.log(5)
+console.log(5);
 
 // VARIJABLE PROMENLJIVE U JS PREDSTAVLJAJU KONTEJNERE ZA SKLADISTENJE VREDNOSTI.
-
-
-
-
-
