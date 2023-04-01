@@ -1,5 +1,7 @@
 // Kondicionali:
 
+//
+
 if ("prvi uslov") {
   // blok koda za izvrsavanje u slucaju da je zadovoljen prvi uslov.
 } else if ("drugi uslov") {
@@ -37,3 +39,15 @@ if (y === 0) {
 //  ako je broj godina izmedju 18 (ukljucuje) i 40(ne ukljucuje):
 // Vi ste punoletni
 // ako je broj godina veci ili jednak 40: Vi ste zrela osoba
+
+const BrojGodina = 40;
+
+if (BrojGodina < 12) {
+  console.log("Vi ste decijeg doba!!");
+} else if (BrojGodina >= 12 && BrojGodina < 18) {
+  console.log("Vi ste maloletni!!  ");
+} else if (BrojGodina >= 18 && BrojGodina < 40) {
+  console.log("Vi ste punoletni!!");
+} else if (BrojGodina >= 40) {
+  console.log("Vi ste zrela osoba");
+}
