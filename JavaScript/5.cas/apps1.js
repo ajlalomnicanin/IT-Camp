@@ -43,14 +43,24 @@ switch (broj) {
 /*Napisati program koji na osnovu dva uneta broja od strane korisnika ispisuje:
 povrsinu kvadrata, ako su uneti brojevi razliciti. */
 
-const brojj = +prompt("Unesite broj godina:");
+
+/*const brojj = +prompt("Unesite broj godina:");
 console.log("brojj")
 switch (broj){
-    case 
-}
-
-
+    case ()
+}*/
 
 /*Korisnik unosi dva realna broja x i y. Napisati program koji izracunava i stampa
 kolicnik x / y , ako je y razlicit od nule,
 a inace ispisuje poruku: Deljenje je nemoguce! */
+let x = 2
+let y = 0
+switch (y !==0){
+ const z = x/y;
+console.log("kolicnik je:" + z );
+break;
+default;
+console.log("Deljenje je nemoguce!!"
+
+)
+}
