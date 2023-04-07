@@ -30,7 +30,7 @@ for (let i = 1; i <= 10; i++) {
   console.log(i);
 }
 
-console.log("-----------");
+console.log("-------izuzev 2 i 5----");
 //ispisati brojeve od 1 do 10 izuzev broja 2 i 5
 
 for (let i = 1; i < 11; i++) {

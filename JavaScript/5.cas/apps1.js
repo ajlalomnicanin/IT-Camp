@@ -56,7 +56,7 @@ a inace ispisuje poruku: Deljenje je nemoguce! */
 let x = 2
 let y = 0
 switch (y !==0){
- const z = x/y;
+ let z = x/y;
 console.log("kolicnik je:" + z );
 break;
 default;
