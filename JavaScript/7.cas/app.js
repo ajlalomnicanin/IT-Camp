@@ -37,24 +37,31 @@ switch (new Date().getDay()) {
 }
 
 // Prebrojati i sabrati brojeve deljive sa  5 u intervalu od 1 do n
-console.log("------suma----");
-const n = prompt(Unesite);
-let suma = 0;
-let nizBrojeva = 0;
-for (let i = 1; (i = n); i++) {
-  if (i % 5 === 0) {
-    suma += i;
-    nizBrojeva += 1;
-  }
-}
-console.log(suma);
-console.log(nizBrojeva);
+// console.log("------suma----");
+// let suma = 0;
+// let bb = 0;
+// for (let i = 1; (i = n); i++) {
+//   if (i % 5 === 0) {
+//     suma += i;
+//     bb += 1;
+//   }
+// }
+// console.log(suma);
+// console.log(bb);
 
-console.log("----------");
+console.log("-----1-----");
 
 // 1. Neka se izvrsi iteracija od broja 99 do -99
 // Ispisati zbir broja deljivog sa 4 i broja 14
+let zbir = 0;
+for (let i = 99; i >= -99; i--) {
+  if (zbir % 4 || zbir % 14) {
+    zbir += i;
+  }
+}
+console.log(zbir);
 
+console.log("-----2-----");
 // ispisuje brojeve 10-1
 for (let i = 10; i >= 1; i--) {
   console.log(i);
@@ -62,3 +69,13 @@ for (let i = 10; i >= 1; i--) {
 
 // 2.izracunati aritmeticku sredinu brojeva koji su deljivi sa 3.
 // Iteracija se vrsi od 3 do 17
+let suma = 0;
+var br = 0;
+for (let i = 3; i <= 17; i++) {
+  if (i % 3 === 0) {
+    suma += i;
+    br++;
+  }
+}
+var prosecno = suma / br;
+console.log(prosecno);
