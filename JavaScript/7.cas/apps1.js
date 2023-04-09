@@ -233,39 +233,145 @@ suma = 0;
 k = 1;
 n = 17;
 for (let i = k; i <= n; i += 2) {
-  console.log(i);
   suma += i;
 }
+console.log(suma);
+
 console.log("-----34------");
 // 34- Proizvod prvih 5 prirodnih brojeva.
 let product = 1;
 for (let i = 1; i <= 5; i++) {
   product *= i;
-  console.log(i);
 }
+console.log(product);
 
-console.log("-----33------");
+console.log("-----35------");
 // 35- Proizvod prirodnih brojeva od 3 do 8.
-product = 2;
+product = 1;
 for (let i = 3; i <= 8; i++) {
-  console.log(i);
-  product = product * i;
+  product *= i;
 }
+console.log(product);
 
+console.log("-----36------");
 //  36- Proizvod trostruke vrijednosti prirodnih od 3 do 8 brojeva.
+product = 1;
+for (let i = 3; i <= 8; i++) {
+  product *= i * 3;
+}
+console.log("Proizvod trostruke vrijednosti je", product);
+
+console.log("-----37------");
 //  37- Proizvod prirodnih od 1 do n.
+product = 1;
+n = 10;
+for (let i = 1; i <= n; i++) {
+  product *= i;
+}
+console.log(product);
+//PROVERIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+console.log("-----38------");
 //  38- Proizvod dvostrukih vrijednosti prirodnih od 1 do 2*n.
+// product = 1;
+// for (let i = 1; i <= 2 * n; i) {
+//   product *= i * 2;
+// }
+// console.log(product);
+
+console.log("-----39------");
 //  39- Proizvod trostukih vrijednosti prirodnih od 1 do 3*n.
+
+console.log("-----40------");
 //  40- Proizvod parnih 1 do 5.
+product = 1;
+for (let i = 2; i <= 5; i += 2) {
+  product *= i;
+}
+console.log(product);
+
+console.log("-----41------");
 //  41- Proizvod neparnih 1 do 5.
+product = 1;
+for (let i = 1; i <= 5; i += 2) {
+  product *= i;
+}
+console.log(product);
+
+console.log("-----42------");
 //  42- Proizvod parnih 10 do 20.
+product = 1;
+for (let i = 10; i <= 20; i += 2) {
+  product *= i;
+}
+console.log(product);
+
+console.log("-----43------");
 //  43- Proizvod parnih 1 do n.
+n = 10;
+product = 1;
+for (let i = 2; i <= 10; i += 2) {
+  product *= i;
+}
+console.log(product);
+
+console.log("-----44------");
 // 4 / 3 -# 44- Proizvod neparnih 1 do n.
+n = 10;
+product = 1;
+for (let i = 1; i <= 10; i += 2) {
+  product *= i;
+}
+console.log(product);
+
+console.log("-----45------");
 // 4 / 3 -# 45- Proizvod parnih k do n.
+k = 10;
+n = 20;
+product = 1;
+for (let i = k; i <= n; i += 2) {
+  product *= i;
+}
+console.log(product);
+console.log("-----46------");
 // 4 / 3 -# 46- Proizvod neparnih od k do n.
-// 4 / 3 -# 47- Proizvod djeljivih sa 3 u intervalu od 1 do k.
+k = 11;
+n = 20;
+product = 1;
+for (let i = k; i <= n; i += 2) {
+  product *= i;
+}
+console.log(product);
+
+console.log("-----47------");
+// 47- Proizvod djeljivih sa 3 u intervalu od 1 do k.
+product = 1;
+k = 10;
+for (let i = 1; i <= k; i++) {
+  if (i % 3 === 0) {
+    product *= i;
+  }
+}
+console.log(product);
+
+console.log("-----48------");
 // 4 / 3 -# 48- Proizvod djeljivih sa 7 u intervalu od 1 do z.
+roduct = 1;
+z = 10;
+for (let i = 1; i <= k; i++) {
+  if (i % 7 === 0) {
+    product *= i;
+  }
+}
+console.log(product);
+
+console.log("-----49------");
 // 4 / 4 -# 49- Prebrojati prirodne od 1 do 5.
+brojac = 0;
+for (let i = 1; i <= 5; i++) {
+  brojac++;
+}
+console.log(i);
+
 // 4 / 4 -# 50- Prebrojati prirodne od 1 do n.
 // 4 / 4 -# 51- Prebrojati parne u intervalu od 20 do n.
 // 4 / 4 -# 52- Prebrojati prirodne od k do n.
@@ -296,3 +402,5 @@ for (let i = 3; i <= 8; i++) {
 // 14
 // 34
 // 35
+// 36
+//38 39
