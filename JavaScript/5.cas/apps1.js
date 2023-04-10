@@ -53,14 +53,4 @@ switch (broj){
 /*Korisnik unosi dva realna broja x i y. Napisati program koji izracunava i stampa
 kolicnik x / y , ako je y razlicit od nule,
 a inace ispisuje poruku: Deljenje je nemoguce! */
-let x = 2
-let y = 0
-switch (y !==0){
- let z = x/y;
-console.log("kolicnik je:" + z );
-break;
-default;
-console.log("Deljenje je nemoguce!!"
 
-)
-}

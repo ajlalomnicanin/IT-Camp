@@ -50,7 +50,7 @@ console.log(a);
 console.log(typeof a);
 console.log("-----")
 
-// 6. null- Nepostojeca ili nekoretna promenljiva ima vrednost null.
+// 6. null- Nepostojeca ili nekorektna promenljiva ima vrednost null.
 // Tip promenljive cija je vrednost null u JS je object.
 b = null;
 
