@@ -678,7 +678,7 @@ for (let i = n; i <= k; i++) {
     suma += i;
     brojac++;
   }
-}
+} 
 rezultat = suma / brojac;
 console.log(rezultat);
 // 22

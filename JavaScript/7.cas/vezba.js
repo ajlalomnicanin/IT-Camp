@@ -92,22 +92,24 @@ let dvaBroj = +prompt("Unesite broj dva!!");
 for (i = jedanBroj; i <= dvaBroj; i++) {
   console.log(i);
 }
-
+console.log("---suma i brojac--");
 // Prebrojati i sabrati brojeve deljive sa  5 u intervalu od 1 do n
-n = 10;
+
 suma = 0;
 br = 0;
-for (i = 1; i <= n; i++) {
+for (i = 1; i <= 10; i++) {
   if (i % 5 === 0) {
+    suma += i;
+    br++;
   }
-  suma += i;
-  br++;
-  rezultat = suma / br;
+
+  // rezultat = suma / br;
 }
 console.log(suma);
 console.log(br);
-console.log(rezultat);
+// console.log(rezultat);
 
+console.log("---------");
 // 1. Neka se izvrsi iteracija od broja 99 do -99
 // Ispisati zbir broja deljivog sa 4 i broja 14
 suma = 0;
@@ -129,4 +131,4 @@ for (let i = 3; i <= 17; i++) {
     proizvod = suma / br;
   }
 }
-console.log(proizvod)
+console.log(proizvod);
