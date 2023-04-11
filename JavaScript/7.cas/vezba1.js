@@ -1,4 +1,4 @@
-// Petlja if...else
+// naredba if...else
 // 1.Napravi program kiji racuna da li je godina prestupna ili ne, a zatim ispistuje sledecu poruku
 //godina je prestupna ako je deljiva sa 4, ali nije deljiva sa 100,osim ako je takodje deljiva sa 400
 
