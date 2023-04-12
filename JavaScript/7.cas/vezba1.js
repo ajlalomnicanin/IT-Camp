@@ -64,3 +64,20 @@ if (isNaN(unos)) {
 }
 
 //naredba if...else
+
+// Napisite program koji ce kosisniku omoguciti  da unese ocenu u rasponu od 1 do 100
+// ako je unesena ocena izmedju 90 i 100 program ce ispisati odlican
+// ako je ocena izmedju 80 i 89,program ce ispisati vrlo dobar
+// ako je ocena izmedju 70 i 79, program ce ispisati dobar
+// ako je ocena izmedju 60 i 69, program ce ispisati dovvoljan
+// ako je ocena manja , program ce ispisati dobar
+
+let ocena = +prompt("Unesite ocenu u rasponu od 1-100");
+
+if (ocena >= 90 && ocena <= 100) {
+  console.log("Odlican");
+} else if (ocena >= 80 && ocena <= 89) {
+  console.log("Vrlo dobar");
+}else if (ocena >= 80 && ocena <= 89) {
+  console.log("Vrlo dobar");
+}

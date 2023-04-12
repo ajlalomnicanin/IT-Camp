@@ -372,7 +372,7 @@ console.log("-----49------");
 // 4 / 4 -# 49- Prebrojati prirodne od 1 do 5.
 brojac = 0;
 for (let i = 1; i <= 5; i++) {
-  brojac += 1;
+  brojac++;
 }
 console.log(brojac);
 
@@ -678,7 +678,7 @@ for (let i = n; i <= k; i++) {
     suma += i;
     brojac++;
   }
-} 
+}
 rezultat = suma / brojac;
 console.log(rezultat);
 // 22
