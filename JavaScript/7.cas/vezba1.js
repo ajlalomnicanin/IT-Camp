@@ -62,3 +62,5 @@ if (isNaN(unos)) {
 } else {
   console.log("unos '${unos}' je  broj");
 }
+
+//naredba if...else
