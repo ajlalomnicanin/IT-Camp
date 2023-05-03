@@ -26,8 +26,9 @@ console.log("---2----");
 
 let broj1 = +prompt("Unesite prvi broj:");
 let broj2 = +prompt("Unesite drugi broj:");
-
-if (broj1 < broj2) {
+if (isNaN(broj1) || isNaN(broj2)) {
+  console.log("Nepostojeci brojovi");
+} else if (broj1 < broj2) {
   while (broj1 <= broj2) {
     console.log(broj1);
     broj1++;
@@ -38,7 +39,7 @@ if (broj1 < broj2) {
     broj2++;
   }
 } else {
-  console.log("Niste uneli broj");
+  console.log("Uneli ste iste brojeve");
 }
 
 console.log("----3----");
@@ -250,7 +251,6 @@ while (i <= broj) {
 }
 
 // Traziti unos brojeva od korisnika sve dok ne unese nulu:
-
 
 // While petlja u JS je petlja koja se ponavlja sve dok je uslov koji je naveden u zagradama tacan .
 // for petlja se koristi kada unapred znamo koliko puta petlja treba da se izvrsi ,dok se
