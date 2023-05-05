@@ -48,15 +48,20 @@ console.log(recenica6);
 
 // 2. Napraviti novu recenicu gde ce umesto slova "a" pisati "t".
 // Dok ako se posle slova "a" nalazi slovo "n" pisace "d" umesto "a".
-// anida
+// i predstavlja indeks
 const recenica7 = prompt("Unesite recenicu7 :");
 let recenica8 = "";
 
 for (let i = 0; i < recenica7.length; i++) {
-  if (recenica7[i + 1] === "n" && recenica7[i] === "a") {
+  if (
+    recenica7[i + 1] === "n" ||
+    (recenica7[i] === "A" && recenica7[i] === "a")
+  ) {
     recenica8 += "d";
-  } else if (recenica7[i] === "a") {
+  } else if (recenica7[i] === "a" || recenica7[i] === "A") {
     recenica8 += "t";
+  } else {
+    recenica8 += recenica7[i];
   }
 }
 console.log(recenica8);
