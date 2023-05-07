@@ -49,3 +49,13 @@ function povrsina(x, y) {
 // while (username.length < 6) {
 //   username = prompt("Unesite vase ime");
 //   //   console.log(username, username.length); //provera
+
+console.log("---------prompt");
+function user_name() {
+  let user_name = "";
+  while (user_name.length < 6) {
+    user_name = prompt("Unesite vase ime");
+    console.log(user_name, user_name.length);
+  }
+}
+user_name();
