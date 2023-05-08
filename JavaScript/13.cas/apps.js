@@ -28,8 +28,8 @@ const myFunction2 = () => {
 
 // Primer
 // prilikom definisanja funkcije mozemo joj proslediti parametre koji su neophodni za izvrsavanje kod
-//date funkcije
-// dok prilikom pozivanja funkcije to sto saljemo fukciji se zovu argumenti
+//date funkcije  // PARAMETRI//
+// dok prilikom pozivanja funkcije to sto saljemo fukciji se zovu argumenti // ARGUMENTI //
 
 // parametar funkcije-prilikom samog definisanja u zagradi
 // prilikom pozivanja fukcije yovu se argumenti

@@ -27,14 +27,3 @@ for (i = 0; i <= duz1; i++) {
 console.log(brojac);
 
 // 1. Ispisati novu recenicu gde ce svaka rec zavrsavati velikim slovom.
-// let rec = ("ovo", "je", "neka", "recenica");
-// let novarec = " ";
-
-// for (i = 0; i < rec.length; i++) {
-//   let recen = rec.length[i];
-//   if (i === 0 || recen.length[i - 1] === " ") {
-//     novarec += recen.toUpperCase();
-//   } else {
-//     novarec += recen.LowerCase();
-//   }
-// }

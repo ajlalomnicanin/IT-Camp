@@ -1,3 +1,4 @@
+// 1. Ispisati novu recenicu gde ce svaka rec zavrsavati velikim slovom.
 const recenica =
   "treba nam nova recenica gde svaka rec zavrsava velikim slovom";
 let recenica2 = "";
@@ -13,7 +14,8 @@ for (let i = 0; i < recenica.length; i++) {
 }
 console.log(recenica2);
 
-// 2.
+// 2.Prebrojati koliko se puta u unetom stringu pojavljuje slovo "M" (i veliko i malo).
+// Npr. za string 'Mama ima momu', dobija se rezultat 5.
 const recenica3 = prompt("Unesite neki string");
 brojac = 0;
 for (let i = 0; i < recenica3.length; i++) {

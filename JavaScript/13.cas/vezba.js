@@ -50,11 +50,12 @@ function najveciBroj(a, b, c) {
   }
   return najveci;
 }
-let a = 4;
-let b = 6;
-let c = 9;
-let rezultat = najveciBroj(a, b, c);
-console.log(rezultat);
+// let a = 4;
+// let b = 6;
+// let c = 9;
+// let rezultat = najveciBroj(a, b, c);
+// console.log(rezultat);
+console.log(najveciBroj(4, 6, 9));
 
 //ber return
 
@@ -85,7 +86,7 @@ brojj(korisnik);
 // Napisi funkciju koja izracunava sumu brojeva u nizu
 console.log("---5-zadatak---");
 
-function niz1(niz) {
+function func(niz) {
   let suma = 0;
   for (let i = 0; i < niz.length; i++) {
     suma += niz[i];
@@ -95,5 +96,44 @@ function niz1(niz) {
 }
 let niz = [1, 2, 3];
 // niz1(niz) samo do ovde bez return
-let rezult = niz1(niz);
-console.log(rezult);
+// let rezult = func(niz);
+// console.log(rezult);
+console.log(func(niz));
+
+//napisi fuknciju koja prima broj n koristi while petlju da izracuna sumu brojeva od 1 do n
+console.log("---6-zadatak---");
+
+function izracunavaSumu(n) {
+  let i = 1;
+  let suma = 0;
+  while (i <= n) {
+    suma += i;
+    i++;
+  }
+  return suma;
+}
+console.log(izracunavaSumu(5));
+
+//Napisite funkciju koja prima broj n i koristi for petlju da ispise sve brojeve od 1 do n
+console.log("---7-zadatak---");
+
+function brojevi(n) {
+  for (let i = 1; i <= n; i++) {
+    console.log(i);
+  }
+}
+brojevi(6);
+
+//if uslov.-Napisi funkciju koja proverrava da li je broj paran. ako jeste napisi broj je paran,inace ispisi
+//broj je neparan
+console.log("---8-zadatak---");
+
+function paran(broj) {
+  if (broj % 2 === 0) {
+    console.log(`${broj} je paran`);
+  } else {
+    console.log(`${broj} je neparan`);
+  }
+}
+broj = +prompt("Unesite neki broj");
+paran(broj);

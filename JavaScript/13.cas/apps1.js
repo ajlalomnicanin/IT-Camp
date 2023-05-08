@@ -59,3 +59,7 @@ function user_name() {
   }
 }
 user_name();
+
+// return koristimo kada zelimo da funkcija vrati vrednost koja moze biti koriscena u daljem kodu , dok se 
+// console.log koristi za ispisivanje vrednosti ili poruka u conzoli u svrhu pracenja ali i 
+// ne za dalje koriscenje koda
