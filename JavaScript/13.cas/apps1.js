@@ -6,7 +6,7 @@ console.log("--Domaci--1.zadatak--");
 // 1.nacin
 function zbir(a, b) {
   if (b === undefined) {
-    return 0;
+    return a * a;
   } else {
     return a * a + b * b;
   }
@@ -34,32 +34,42 @@ console.log("--Domaci--3.zadatak--");
 
 function povrsina(x, y) {
   if (x === y) {
-    let povrsinaKvadrata = a * a;
+    let povrsinaKvadrata = x * x;
     return `Brojevi  su isti i povrsina kvadrata tih brojeva je ${povrsinaKvadrata}`;
   } else {
-    let povrsinaPravougaonika = a * b;
+    let povrsinaPravougaonika = x * y;
     return `Brojevi su razliciti i povrsina pravougaonika je ${povrsinaPravougaonika}`;
   }
 }
+console.log(povrsina(5, 6));
 
 // // Traziti unos korisnickog imena sve dok korisnik ne unese ispravno korisnicko ime
-// // npr duzina korisnickog imena mora biti najmanje 6 karaktera
-
-// let username = "";
-// while (username.length < 6) {
-//   username = prompt("Unesite vase ime");
-//   //   console.log(username, username.length); //provera
+// // npr duzina korisnickog imena mora biti najmanje 6 karakter
 
 console.log("---------prompt");
+
 function user_name() {
-  let user_name = "";
-  while (user_name.length < 6) {
-    user_name = prompt("Unesite vase ime");
-    console.log(user_name, user_name.length);
+  let ime = "";
+  while (ime.length < 6) {
+    ime = prompt("Unesite vase ime (prompt)");
+    console.log(ime, ime.length);
   }
 }
+
 user_name();
 
-// return koristimo kada zelimo da funkcija vrati vrednost koja moze biti koriscena u daljem kodu , dok se 
-// console.log koristi za ispisivanje vrednosti ili poruka u conzoli u svrhu pracenja ali i 
+console.log("+++++++++++");
+
+function user() {
+  let ime1 = ""
+  while (ime1 < 6) {
+    ime1 = prompt("Unesite vase ime");
+  }
+  return ime1;
+}
+ime1 = prompt("Unesite vase ime 1");
+console.log(user());
+
+// return koristimo kada zelimo da funkcija vrati vrednost koja moze biti koriscena u daljem kodu , dok se
+// console.log koristi za ispisivanje vrednosti ili poruka u conzoli u svrhu pracenja ali i
 // ne za dalje koriscenje koda

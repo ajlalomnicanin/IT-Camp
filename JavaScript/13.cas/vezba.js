@@ -135,5 +135,6 @@ function paran(broj) {
     console.log(`${broj} je neparan`);
   }
 }
+// broj = 5;
 broj = +prompt("Unesite neki broj");
 paran(broj);
