@@ -63,5 +63,3 @@ function organizacija(sat, minut) {
 //   let minut = 5;
 console.log(organizacija(18, 5));
 
-// 3. 
-function korisnik ()

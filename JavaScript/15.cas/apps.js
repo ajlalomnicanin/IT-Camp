@@ -7,16 +7,16 @@ if (!isSunny) {
   console.log("Napolju nije suncano");
 }
 
-//Postoji 8 false vrednosti, to su:
+// Postoji 8 FALSY vrednosti, to su:
 
-// 1.false
-// 2."" - string (ako bar ima razmak, zadovoljice uslov, i bice truthy, ako nema nista u stringu onda bice false)
-// 3.0 - number
-// 4.-0
-// 5. 
-// 8.null
-
-//
+// 1. false
+// 2. ""
+// 3. 0
+// 4. -0
+// 5. 0n
+// 6. NaN
+// 7. undefined
+// 8. null
 
 //1. Napravi funkciju gde se trazi unos od strane korisnika i vraca poruku da li je uneta vrednost TRUTHY
 // ili FALSY vrednost
