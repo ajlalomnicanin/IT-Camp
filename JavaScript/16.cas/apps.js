@@ -79,7 +79,13 @@ console.log(c);
 // Sve metode vezane za stringove prave novi string, ne vrsi se modifikacija postojeceg.
 
 // Zadaci:
-// 1.Napravi funkciju koja kod stringa
+// 1.
+// Napraviti funkciju koja kod stringa koji predstavlja argument funkcije ispituje sledece:
+// Ako dati string ima vecu duzinu od 9:
+// pravi novi string gde menjamo sva mala slova "a" sa "B" i funkcija ce vratiti novi string koji je sastavljen od "Ovo je novodobijena recenica, " + novaRecenica
+// Ako string ima duzinu <= 9:
+// Funkcija treba vratiti poruku:
+// Recenica je nedovoljne duzine za dalje ispitivanje.
 
 function myFunction(recenica) {
   if (recenica.length > 9) {
