@@ -15,7 +15,14 @@ console.log(funkcija1("Hello", "World"));
 // Funkcija treba da vrati true ako je string palindrom, inače false.
 // Na primer, za ulazni string "radar" funkcija treba da vrati true, dok za ulazni string "hello" funkcija treba da vrati false.
 
-function funkcija2 (string3){
-    
-w
+function funkcija2(string3) {
+  let palindrom = "";
+  for (let i = string3.length - 1; i >= 0; i--) {
+    palindrom += string3[i];
+  }
+  // return palindrom
+  return palindrom === string3;
 }
+
+console.log(funkcija2("radar"));
+console.log(funkcija2("hello"));
