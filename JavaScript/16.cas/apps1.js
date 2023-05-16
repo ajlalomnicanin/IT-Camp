@@ -21,10 +21,24 @@ function funkcija() {
   let polaRecenice = polovina1.concat(polovina2);
   console.log(polaRecenice);
 
-  let zamenjenaRecenica = recenica.replace("skola", "fakultet");
+  let zamenjenaRecenica = recenica.replace(/skola/gi, "fakultet");
   console.log(zamenjenaRecenica);
 }
 funkcija();
+
+// treca recenica preko for petlje
+// const duzinaRecenice = recenica.length;
+// let recenica3 = "";
+// for (let i = 0; i < duzinaRecenice; i++) {
+//   if (i <= duzinaRecenice / 2) {
+//     recenica3 += recenica[i].toUpperCase;
+//   } else recenica3 += recenica[i].toLowerCase;
+// }
+// // posle preko return na kraju svih ovih recenica
+// return `${recenicaVelika} \n
+// ${recenicaMala} \n
+// ${recenica3} \n
+// ${zamenjenaRecenica} \n`;
 
 // 2.Zadatak: Zamena reči
 // Napiši funkciju koja prima dva argumenta: originalni string i reč koju treba zameniti.
@@ -32,13 +46,8 @@ funkcija();
 //  rezultujući string. Na primer, za ulazne vrednosti "Danas je lep dan." i "lep", funkcija treba da
 //  vrati "Danas je # dan.".
 
-function funkcija2(a, b) {
-  let recenica = "Danas je lep dan.";
-  let promenjena = recenica.replace("lep", "#");
-  console.log(promenjena);
-}
-funkcija2("lep", "#");
-
+const druga = (recenica, rec) => recenica.replace(rec, "#");
+console.log(druga("Danas je lep dan", "lep"));
 //3. Zadatak: Brojanje karaktera
 // Napiši funkciju koja prima jedan string kao argument i vraća broj karaktera u tom stringu.
 //  Ignoriši prazne prostore. Na primer, za ulazni string "Hello, World!", funkcija treba 0
