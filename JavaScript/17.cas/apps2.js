@@ -9,6 +9,11 @@ function funkcija1(string1, string2) {
 }
 console.log(funkcija1("Hello", "World"));
 
+function funkcija(string, stringg) {
+  stringovii = string + stringg;
+  let noviString = "";
+  // for (let i = 0; i)
+}
 // Zadatak: Palindrom
 // Napiši funkciju koja prima jedan string kao argument i proverava da li je taj string palindrom,
 // tj. da li se čita isto i s leva na desno i s desna na levo.
@@ -26,3 +31,10 @@ function funkcija2(string3) {
 
 console.log(funkcija2("radar"));
 console.log(funkcija2("hello"));
+
+// moze i ovako umesto palindrom===string3
+// if (palindrom === obrnutiString) {
+//   return true;
+// } else {
+//   return false;
+// }

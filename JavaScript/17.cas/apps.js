@@ -9,4 +9,3 @@ const str2 = str.trim();
 const duzina2 = str2.length;
 console.log(str2);
 console.log(duzina2);
-
