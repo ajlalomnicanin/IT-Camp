@@ -2,7 +2,14 @@
 
 const recenica = "danas je lep dan.";
 
-// indexOf() metoda nam vraca poziciju karaktera ili
+// indexOf() metoda nam vraca poziciju karaktera (niza karaktera) koje smo poslali kao argument.
+// Ako se argument nalazi vise puta unutar stringa dobijamo poziciju prvog pojavljivanja tog argumenta.
+// Ako se argument ne nadje unutar stringa rezultat ce biti -1.
+
+console.log(recenica.indexOf("d"));
+console.log(recenica.indexOf("dan"));
+console.log(recenica.indexOf("noc"));
+console.log(recenica.indexOf("nas"));
 
 // lastIndexOf() metoda nam vraca poziciju poslednjeg pojavljivanja karaktera (niza karaktera)
 // koje smo poslali kao argument.
@@ -24,6 +31,7 @@ console.log(recenica.indexOf("danas", 6));
 console.log(recenica.search("dan"));
 console.log(recenica.search("noc"));
 
+console.log("search")
 // startsWith() metoda proverava da li neki string pocinje argumentom koji joj saljemo. Vraca boolean (true
 // ili false).
 // Opciono mozemo poslati drugi argument koji ce da bude index od kog zelimo da trazimo pozociju nekog stringa.
