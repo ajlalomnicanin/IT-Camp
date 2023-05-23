@@ -28,6 +28,7 @@ console.log(zadatak("ko osvaja ligu sampiona?"));
 console.log(zadatak("Ko osvaja ligu sampiona?"));
 console.log(zadatak("ko osvaja ligu sampiona? ko osvaja? ko osvaja?"));
 
+console.log("domaci");
 // Domaci zadaci:
 // Napraviti funkciju koja ispituje argument.
 // Ako se u recenici nadje rec "skola", neka se vrati pozicija prvog pojavljivanja date reci.
@@ -36,18 +37,44 @@ console.log(zadatak("ko osvaja ligu sampiona? ko osvaja? ko osvaja?"));
 // Inace vratiti duzinu datog stinga.
 
 function funkcija1(recenica) {
-  if (recenica.startsWith("automobil")) {
+  if (recenica.includes("skola")) {
+    return recenica.indexOf("skola");
+  } else if (recenica.startsWith("automobil")) {
     return true;
   } else if (recenica.length % 2 === 0) {
-    return recenica.match(/kuca/g);
+    let recenica1 = recenica.match(/kuca/g);
+    return recenica1;
   } else {
     return recenica.length;
-  
-
   }
+}
 
-  }
+console.log(funkcija1("danas ja skola lepa."));
+console.log(funkcija1("automobil je brz."));
+console.log(funkcija1("kuca je cista.kuca je cista."));
+console.log(funkcija1("duzina recenice je "));
 
-console.log(funkcija1("automobil ima kucu koja je kuca"));
 // 3.	Prebrojati koliko ima malih slova u unetom stringu. Slova koja se koriste u stringu
 // pripadaju isključivo engleskoj abecedi.
+
+function malaSlova(string) {
+  let brojac = 0;
+  for (let i = 0; i <= string.length; i++) {
+    if (string.charAt(i) >= "a" && string.charAt(i) <= "z") {
+      brojac++;
+    }
+  }
+  return brojac;
+}
+console.log(malaSlova("gevhgwASDF"));
+
+function malaSlova1(string) {
+  let brojac = 0;
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] >= "a" && string[i] <= "z") {
+      brojac++;
+    }
+  }
+  return brojac;
+}
+console.log(malaSlova1("ajlajlaASDF"));

@@ -1,5 +1,5 @@
 // includes() metoda vraca boolean (true ili false) u zavisnosti od toga da li se argument nalazi u stringu
-// na kojem se primeljuje metoda ili ne
+// na kojem se primenjuje metoda ili ne
 // Opciono!!! Drugi argument predstavlja poziciju od koje cemo traziti dati argument u stringu.
 
 const recenica = "Dobar dan!";
