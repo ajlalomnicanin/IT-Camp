@@ -78,3 +78,17 @@ function malaSlova1(string) {
   return brojac;
 }
 console.log(malaSlova1("ajlajlaASDF"));
+
+function string1(string) {
+  let brojac = 0;
+  for (let i = 0; i < string.length; i++) {
+    let toUp = string.toUpperCase();
+    let toLower = string.toLowerCase();
+    if (!toUp || toLower) {
+      brojac++;
+    }
+  }
+  return brojac;
+}
+
+console.log(string1("DANAS"));
