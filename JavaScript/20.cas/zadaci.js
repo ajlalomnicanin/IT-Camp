@@ -42,8 +42,12 @@ function funkcija1(recenica) {
   } else if (recenica.startsWith("automobil")) {
     return true;
   } else if (recenica.length % 2 === 0) {
-    let recenica1 = recenica.match(/kuca/g);
-    return recenica1;
+    if (recenica.match(/kuca/g) === null) {
+      return 0;
+    } else {
+      let recenica1 = recenica.match(/kuca/g).length;
+      return recenica1;
+    }
   } else {
     return recenica.length;
   }
@@ -52,6 +56,7 @@ function funkcija1(recenica) {
 console.log(funkcija1("danas ja skola lepa."));
 console.log(funkcija1("automobil je brz."));
 console.log(funkcija1("kuca je cista.kuca je cista."));
+console.log(funkcija1("kuca"));
 console.log(funkcija1("duzina recenice je "));
 
 // 3.	Prebrojati koliko ima malih slova u unetom stringu. Slova koja se koriste u stringu
@@ -92,3 +97,17 @@ function string1(string) {
 }
 
 console.log(string1("DANAS"));
+
+console.log("a" > "b");
+console.log("a" > "A");
+
+console.log("a".charCodeAt(0));
+console.log("A".charCodeAt(0));
+// prvo idu velika pa mala slova.
+console.log("b".charCodeAt(0));
+console.log("B".charCodeAt(0));
+
+console.log("A".charCodeAt(0));
+console.log("Z".charCodeAt(0));
+console.log("a".charCodeAt(0));
+console.log("z".charCodeAt(0));
