@@ -31,3 +31,11 @@ function funkcija3(string) {
   return duzina;
 }
 console.log(funkcija3("Pera ima devojku"));
+
+const rec = (recenica) => {
+  const prviRazmak = recenica.indexOf(" ");
+  const prvaRec = recenica.slice(0, prviRazmak);
+  return prvaRec.length;
+};
+console.log(rec("Pera ima devojku."));
+
