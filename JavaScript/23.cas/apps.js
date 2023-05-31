@@ -1,5 +1,5 @@
 // 1.	Uneti string se šifruje tako što se zamenjuje redosled znacima u stringu. Prvi i drugi zamene mesta,
-//  zatim 3. i 4. zamene mesta itd. Npr. za string 'Pera ima devojku', treba dobiti 'ePari amd vejouk'. 
+//  zatim 3. i 4. zamene mesta itd. Npr. za string 'Pera ima devojku', treba dobiti 'ePari amd vejouk'.
 //  Ako string ima neparan broj znakova, poslednji znak se ne dira.
 
 const pera = "Pera ima devojku";
@@ -32,8 +32,8 @@ const zamenaMesta = (string) => {
 console.log(zamenaMesta("Pera ima devojku"));
 console.log(zamenaMesta("Neparan broj karaktera."));
 
-// 2.	Unose se dva stringa A i B. Kreirati novi string kao kombinaciju stringova A i B, tako što se 
-// kombinuju prvi sa prvim, drugi sa drugim, treći sa trećim znakom itd. Ako je jedan string duži od drugog, 
+// 2.	Unose se dva stringa A i B. Kreirati novi string kao kombinaciju stringova A i B, tako što se
+// kombinuju prvi sa prvim, drugi sa drugim, treći sa trećim znakom itd. Ako je jedan string duži od drugog,
 // na kraju samo dodati znakove viška. Npr. za stringove "PERA" i "sladoled" dobija se string "PsElRaAdoled".
 
 const spajanje = (A, B) => {
@@ -64,3 +64,37 @@ console.log(spajanje("PERA", "sladoled"));
 // 1. Write a JavaScript function to hide email addresses to protect from unauthorized user.
 // console.log(protectEmail("robin_singh@example.com")); (posle imena moze biti ili _ ili .)
 // "robin...@example.com"
+
+// function email(string) {
+//   let iindex = string.indexOf("@");
+
+//   if (iindex !== -1) {
+//     let slice0 = string.slice(0, iindex);
+//     let slice1 = string.slice(iindex + 1);
+
+//     let zasticeniKorisnik = slice0.replace(/./g, ".");
+//     let zasticeniEmail = zasticeniKorisnik + slice1;
+//     return zasticeniEmail;
+//   }
+//   return string;
+// }
+// console.log(email("robin_singh@example.com"));
+
+function protectUser(email) {
+  const indexUnderline = email.indexOf("_");
+  const indexDot = email.indexOf(".");
+
+  // let indexSymbol
+  // if (indexUnderline === -1) {
+  //   indexSymbol=indexDot
+  //    }else {
+  //     indexSymbol=indexUnderline
+  //    }
+
+  const indexSymbol = indexUnderline === -1 ? indexDot : indexUnderline;
+  const indexEt = email.indexOf("@");
+  const surname = email.slice(indexSymbol, indexEt);
+  return email.replace(surname, "...");
+}
+console.log(protectUser("robin_singh@example.com"));
+console.log(protectUser("robin.singh@example.com"));
