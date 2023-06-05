@@ -73,3 +73,18 @@ console.log(funkcija2(34, 40, 45, 45));
 console.log(funkcija2(50, 50, 45, 45));
 console.log(funkcija1(50, 50, 50, 50));
 console.log(funkcija1(23, 32, 32, 23));
+
+// Domaci zadaci:
+// 1.
+// a=int(input('Unesite prvu potencijalnu stranicu pravougaonika: '))
+// b=int(input('Unesite drugu potencijalnu stranicu pravougaonika: '))
+// c=int(input('Unesite trecu potencijalnu stranicu pravougaonika: '))
+// d=int(input('Unesite cetvrtu potencijalnu stranicu pravougaonika: '))
+
+// 2. Unesite broj sekundi koji zelite pretvoriti u sate, minute i sekunde:
+
+// 1 sat ima 60 minuta
+// 1 sat ima 60*60 = 3600 sekundi
+// 1 minut ima 60 sekundi
+
+// 123
