@@ -47,5 +47,17 @@ const funkcija1 = (broj) => {
   return +dvocifrenbroj;
 };
 console.log(funkcija1(267));
-let rezultat = funkcija1(296);
+let rezultat = funkcija1(267);
 console.log(typeof rezultat);
+
+// ili
+function first(broj) {
+  if (!isNaN(broj) && broj >= 100 && broj <= 999) {
+    const stotine = Math.floor(broj / 100);
+    const jedinice = broj % 10;
+    const noviBroj = Number(`${stotine}+${jedinice}`);
+    return noviBroj;
+  } else {
+    return "Argument nije trazeni broj";
+  }
+}
