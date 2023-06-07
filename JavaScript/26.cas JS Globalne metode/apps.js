@@ -55,9 +55,6 @@ console.log(parseInt({})); // NaN
 
 // Zadaci
 // 1.Napravi funkciju koja pretvara km u m
-// 2.Napravi funkciju koja pretvara m u km
-// 3.Napravi funkciju koja pretvara inc u cm
-
 function first(km) {
   const metri = km * 1000;
   return metri;
