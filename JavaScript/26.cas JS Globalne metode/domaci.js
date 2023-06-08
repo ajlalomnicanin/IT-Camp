@@ -61,3 +61,5 @@ function first(broj) {
     return "Argument nije trazeni broj";
   }
 }
+
+console.log(funkcija1(667));
