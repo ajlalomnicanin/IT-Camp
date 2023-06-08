@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Inconsolata&family=Lato&family=Lobster+Two&family=Marck+Script&family=Oswald&family=Poppins&family=Roboto&family=Sail&family=Sono&family=Zilla+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <title>Happy Birthday</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        background-color: #b6c397;
+
+        font-family: "Allerta Stencil", sans-serif;
+        font-family: "Inconsolata", monospace;
+        font-family: "Lato", sans-serif;
+        font-family: "Lobster Two", cursive;
+        font-family: "Marck Script", cursive;
+        font-family: "Oswald", sans-serif;
+        font-family: "Poppins", sans-serif;
+        font-family: "Roboto", sans-serif;
+        font-family: "Sail", cursive;
+        font-family: "Sono", sans-serif;
+        font-family: "Zilla Slab", serif;
+      }
+      h1 {
+        text-align: center;
+        font-size: 40px;
+        animation: fadeIn 1s ease-in-out;
+      }
+      .container {
+        width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f5f5f5;
+        box-shadow: 0 0 10px 0 #000;
+      }
+      .button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        animation: bounce 1s ease-in-out;
+      }
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes bounce {
+        0% {
+          transform: translateY(-20px);
+          opacity: 0;
+        }
+        50% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(-20px);
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Happy Birthday!</h1>
+      <p>
+        Ersine, happy birthday! Even though our paths may have diverged, I wish
+        you nothing but the best in life. I cherish all the wonderful times we
+        spent together and am grateful for the beautiful memories. May this year
+        be filled with happiness, love, and the fulfillment of all your dreams.
+        May your birthday mark the beginning of a new era, full of excitement
+        and unlimited possibilities. Congratulations on another year of wisdom
+        and experience. May life bring you everything you desire and more. Enjoy
+        your special day to the fullest!
+      </p>
+      <button class="button" onclick="showMessage()">
+        Click here to see a message
+      </button>
+    </div>
+    <script>
+      function showMessage() {
+        alert("Happy Birthday!");
+      }
+    </script>
+  </body>
+</html>
