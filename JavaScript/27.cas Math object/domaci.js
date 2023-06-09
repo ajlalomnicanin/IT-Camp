@@ -9,7 +9,7 @@ function num(broj) {
     let sedamBroj = Math.floor((broj % 1000) / 100);
     let petBroj = Math.floor((broj % 100) / 10);
     let dvaBroj = broj % 10;
-    return `${petBroj}${dvaBroj}${cetiriBroj}${sedamBroj}`;
+    return +`${petBroj}${dvaBroj}${cetiriBroj}${sedamBroj}`;
   }
 }
 console.log(num(4752));
@@ -34,29 +34,38 @@ console.log(funkcija(15, 15));
 console.log(funkcija(130, 40));
 console.log(funkcija(200, 80));
 
-// function funkcija1(broj1, broj2) {
-//   let rezultat1 = broj1 - 100;
-//   let rezultat2 = broj2 - 100;
-//   if (broj1 < 100 || broj2 < 100) {
-//     if (rezultat1 === rezultat2) {
-//       return `Oba broja su jednako blizu`;
-//     } else if (rezultat1 > rezultat2) {
-//       return `broj1 ${broj1} je blizi broju 100`;
-//     } else {
-//       return `broj2 ${broj2} je blizi broju 100`;
-//     }
-//   }
-//   if (broj1 > 100 && broj2 > 100) {
-//     if (rezultat1 === rezultat2) {
-//       return `Oba broja su jednako blizu`;
-//     } else if (rezultat1 < rezultat2) {
-//       return `broj1 ${broj1} je blizi broju 100`;
-//     } else {
-//       return `broj2 ${broj2} je blizi broju 100`;
-//     }
-//   }
-// }
-// console.log(funkcija1(15, 30));
-// console.log(funkcija1(15, 15));
-// console.log(funkcija1(130, 40));
-// console.log(funkcija1(200, 80));
+// ili
+console.log("drugi nacin");
+const nearestTo100 = (num1, num2) => {
+  let firstCounter = 0;
+  let secondCounter = 0;
+  if (num1 < 100) {
+    for (let i = num1; i < 100; i++) {
+      firstCounter++;
+    }
+  } else {
+    for (let i = num1; i > 100; i--) {
+      firstCounter++;
+    }
+  }
+  if (num2 < 100) {
+    for (let i = num2; i < 100; i++) {
+      secondCounter++;
+    }
+  } else {
+    for (let i = num2; i > 100; i--) {
+      secondCounter++;
+    }
+  }
+  if (firstCounter < secondCounter) {
+    return `broj1, ${num1} je blizi broju 100`;
+  } else if (firstCounter > secondCounter) {
+    return `broj2, ${num2} je blizi broju 100`;
+  } else {
+    return `Oba broja su jednako blizu`;
+  }
+};
+console.log(nearestTo100(100, 9));
+console.log(nearestTo100(98, 99));
+console.log(nearestTo100(105, 105));
+console.log(nearestTo100(105, 95));

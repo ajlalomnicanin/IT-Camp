@@ -18,6 +18,8 @@ Math.LN10;
 Math.LOG2E;
 Math.LOG10E;
 
+// Write a JavaScript program to find the largest of three given integers.
+
 function funkcija1(broj1, broj2, broj3) {
   if (isNaN(broj1) || isNaN(broj2) || isNaN(broj3)) {
     return `Niste uneli broj`;
@@ -48,3 +50,6 @@ function max(num1, num2, num3) {
 console.log(max(2, 4, 6));
 console.log(max(4, 8, 6));
 console.log(max(10, 8, 6));
+
+// / Napraviti funkciju koja trazi od korisnika unos 7 vrednosti (svaka se odnosi na maksimalnu
+//  dnevnu temperaturu dana u nedelji). Funkcija treba da vrati temperatutu najtoplijeg dana u nedelji.
