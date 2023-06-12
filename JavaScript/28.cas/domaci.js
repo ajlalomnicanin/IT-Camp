@@ -21,6 +21,7 @@ console.log(numbers(20, 100));
 console.log(numbers(10, 110));
 
 console.log("ili");
+
 function numbers1(num1, num2) {
   if (
     ((num1 >= 40 && num1 <= 60) || (num2 >= 40 && num2 <= 60)) &&
