@@ -51,3 +51,17 @@ console.log(date.toISOString());
 
 // Date.parse() vraca nam broj milisekundi izmedju 1.1.1970. i poslatog datuma
 console.log(Date.parse(new Date()));
+
+
+const anastasija = new Date(2005, 9, 25);
+const ajsa = new Date(2005, 1, 7);
+
+const brMsAjsa = Date.parse(ajsa);
+const brMsAnastasija = Date.parse(anastasija);
+console.log(brMsAjsa);
+console.log(brMsAnastasija);
+const razlika = brMsAnastasija - brMsAjsa;
+// const razlikaDatum = new Date(razlika);
+// console.log(razlikaDatum);
+const dana = razlika / 1000 / 60 / 60 / 24;
+console.log(dana);
