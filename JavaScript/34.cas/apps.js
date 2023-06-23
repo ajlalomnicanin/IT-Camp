@@ -75,7 +75,7 @@ brojevi.sort(function (a, b) {
 });
 console.log(brojevi.sort());
 
-brojevi.sort(a, (b) => b - a); // arrow funkcija
+brojevi.sort((a, b) => b - a); // arrow funkcija
 
 // Sortiranje niza u random redosledu:
 
