@@ -75,6 +75,49 @@ console.log(muskarci);
 let devojke = grupa.slice(0);
 console.log(devojke);
 
+// preko for petlje
+const grupa1 = [
+  "Tarik", //
+
+  "Selver",
+  "Nedim",
+  "Merjem",
+
+  "Melida", //
+  "Marija", //
+  " Dzevdet", //
+
+  "Dzana",
+  "Asija",
+  "Anastasija",
+  "Ajsa",
+];
+const novaGrupa = [];
+for (let person of grupa) {
+  if (
+    (person === "Tarik",
+    person === "Melida",
+    person === "Marija",
+    person === "Dzevdet")
+  ) {
+    continue;
+  } else {
+    novaGrupa.push(person);
+  }
+}
+console.log(novaGrupa);
+const muskarci1 = [];
+const devojke1 = [];
+for (let person of novaGrupa) {
+  if (person[person.length - 1] === "a" || person === "Merjem") {
+    devojke1.push(person);
+  } else {
+    muskarci1.push(person);
+  }
+}
+console.log(devojke1);
+console.log(muskarci1);
+
 // 4. Napraviti funkciju koja pravi novi niz, koji ce sadrzati samo elemente koji su se nalazili na
 // neparnim mestima unutar originalnog niza.
 // [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
