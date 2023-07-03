@@ -2,7 +2,7 @@
 
 const grupa = ["Emir", "Ajsa", "Selver", "Asija"];
 //               0        1       2         3
-const kljucevi = grupa.keys();
+const kljucevi = grupa.keys(); //vraca poziciju 0,1,2,3 odnosno niz kljuceva
 
 console.log(kljucevi);
 

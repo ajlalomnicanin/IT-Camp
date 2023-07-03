@@ -2,7 +2,7 @@
 
 // Array Itteraton metode prolaze kroz svaki element niza.
 
-// gorEach() metoda - poziva callback funkciju (koja predstavlja argument forEach() metode jednom za
+// forEach() metoda - poziva callback funkciju (koja predstavlja argument forEach() metode jednom za
 //  svaki element niza)
 
 const brojevi = [2, 4, 6, 8, 10, 12];
