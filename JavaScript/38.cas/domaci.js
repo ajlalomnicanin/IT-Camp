@@ -6,7 +6,7 @@ console.log(niz2);
 //  sa onim elementima ciji je tip "boolean".
 
 const niz3 = ["String", 23, true, [1, 2, 3], false];
-const niz4 = niz3.filter((b) => b === true || b === false);
+const niz4 = niz3.filter((el) => typeof el === "boolean");
 console.log(niz4);
 
 // 3. Napraviti funkciju koja pravi niz koji ce iz postojeceg napraviti novi uz ispunjenje uslova:
