@@ -57,14 +57,14 @@ array2 = [3, 5, 6, 7, 8, 13];
 // Expected Output :
 // [4, 5, 8, 10, 12, 13]
 
-const result = array1.map((value, index) => value + (array2[index] || 0));
+const result = array2.map((value, index) => value + (array1[index] || 0));
 console.log(result);
 
-const suma = 0;
-const maxLength = Math.max(array1.length, array2.length);
+// const suma = 0;
+// const maxLength = Math.max(array1.length, array2.length);
 
-for (let i = 0; i < maxLength; i++) {
-  const sum = (array1[i] || 0) + (array2[i] || 0);
-  result.push(sum);
-}
-console.log(result);
+// for (let i = 0; i < maxLength; i++) {
+//   const sum = (array1[i] || 0) + (array2[i] || 0);
+//   result.push(sum);
+// }
+// console.log(result);
