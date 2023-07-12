@@ -27,3 +27,12 @@ function text(string) {
   return rezultat;
 }
 console.log(text("The Quick Brown Fox"));
+
+// ili
+function text1(str) {
+  let str1 = str.filter((string) => {
+    if (string === string.toUpperCase) {
+        
+    }
+  });
+}
