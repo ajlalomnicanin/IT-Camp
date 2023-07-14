@@ -16,6 +16,28 @@ function array1(arr) {
   return rezultat;
 }
 console.log(array1([1, 2, 3, 4, 5, 6]));
+
 // 3. Broj palindrom se cita isto sa obe strane. Najveci palindrom napravljen od proizvoda dva dvocifrena
 // broja je 9009 = 91 x 99.
 //  Pronaci najveci palindrom napravljen od proizvoda dva trocifrena broja.
+
+function palindrom() {
+  let najveciPalindrom = 1;
+  let proizvod = 1;
+  for (let i = 100; i <= 999; i++) {
+    for (let j = 100; j <= 999; j++) {
+      proizvod = i * j;
+      // console.log(typeof proizvod); typeof je  number, zato moramo pretvoriti u string da bi koristili
+      // split i join
+      // console.log(proizvod);
+      const proizvodString = proizvod.toString();
+      const obrnutiProizvod = proizvodString.split("").reverse().join("");
+
+      if (proizvodString === obrnutiProizvod && proizvod > najveciPalindrom) {
+        najveciPalindrom = proizvod;
+      }
+    }
+  }
+  return najveciPalindrom;
+}
+console.log(palindrom());
