@@ -17,6 +17,7 @@
 //   }
 // }
 // console.log(first());
+
 // 2. We have the following arrays : Go to the editor
 color = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "];
 o = ["st", "nd", "rd", "th"];
