@@ -5,8 +5,6 @@
 
 // x referencira na person, ne uzima vrednost
 
-// dzejson
-
 const arr = ["Emir", "Ajsa", "Dzenan"];
 //             0        1        2
 
