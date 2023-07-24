@@ -41,6 +41,10 @@ myCar.smanjenjeBrzine = function (vrednost) {
     return "Nije moguce smanjiti brzinu.";
   }
 };
+myCar.koci = function () {
+  this.trenutnaBrzina = 0;
+  return "Ukocili ste";
+};
 
 console.log(myCar.trenutnaBrzina);
 myCar.povecanjeBrzine(80);
@@ -86,3 +90,5 @@ console.log(osoba1);
 console.log(osoba1.setLanguage("srp"));
 // console.log(osoba1.language);
 console.log(osoba1.setNickName());
+
+// ili
