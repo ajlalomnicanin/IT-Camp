@@ -91,7 +91,7 @@ const godine = [
 const punoletni = godine.filter((coek) => coek.starost >= 18);
 console.log(punoletni);
 
-const punoletni2 = punoletni.map((coek) => coek.starost);
+const punoletni2 = punoletni.map((coek) => coek.starost );
 console.log(punoletni2);
 
 // ... (spread) operator
