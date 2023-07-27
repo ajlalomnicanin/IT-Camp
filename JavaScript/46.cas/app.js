@@ -76,3 +76,7 @@ const arr = [
     polozenC: false,
   },
 ];
+const arr2 = arr.filter(
+  (st) => st.bojaOciju === "braon" && st.polozenC === false
+);
+console.log(arr2);
