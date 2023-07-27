@@ -45,3 +45,21 @@ const library = [
     libraryID: 3245,
   },
 ];
+// 1. nacin
+// library.sort((a, b) => a.title.localeCompare(b.title));
+// console.log(library);
+
+// 2. nacin
+const sortByTitle = (arr) => {
+  const titleArr = arr.map((el) => el.title);
+  titleArr.sort();
+
+  const library2 = [];
+  titleArr.forEach((title) => {
+    const element = arr.find((obj) => obj.title === title);
+    library2.push(element);
+  });
+  return library2;
+};
+
+console.log(sortByTitle(library));
