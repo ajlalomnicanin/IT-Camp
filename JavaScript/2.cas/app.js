@@ -24,7 +24,7 @@ console.log("Poruka u konzoli.");
 // JavaScripta je case sensitive (razlikuje velika i mala slova)
 
 a = 10;
-// console.log(A); error - a is not defined
+// console.log(A); error - a is not defined 
 console.log(a); // 10
 
 // Zapisivanje promenljivih koje sadrze 2 ili vise reci:
