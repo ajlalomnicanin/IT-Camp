@@ -20,8 +20,10 @@ const person2 = {
 // 2. apply()
 // 3. bind()
 
-// Prvo dolazimo do funkcije cije izvrsavanje zelimo, to moze biti funkcija koja predstavlja metodu nekog objekta, a moze biti i funkcija koja je definisana u global scope.
-// Nakon toga, na tu funkciju primenjujemo call metodu ciji prvi argument predstavlja objekat na kojem zelimo izvrsavanje funkcije, a potencijalno drugi, treci,... su argumenti glavne funkcije.
+// Prvo dolazimo do funkcije cije izvrsavanje zelimo, to moze biti funkcija koja predstavlja metodu nekog objekta,
+//  a moze biti i funkcija koja je definisana u global scope.
+// Nakon toga, na tu funkciju primenjujemo call metodu ciji prvi argument predstavlja objekat na kojem zelimo izvrsavanje
+//  funkcije, a potencijalno drugi, treci,... su argumenti glavne funkcije.
 console.log(person.fullName.call(person2));
 
 const restoran = {
@@ -44,8 +46,10 @@ const restoran2 = {
 };
 console.log(poruka.call(restoran2, "Beogradu"));
 
-// Prvo dolazimo do funkcije cije izvrsavanje zelimo, to moze biti funkcija koja predstavlja metodu nekog objekta, a moze biti i funkcija koja je definisana u global scope.
-// Nakon toga, na tu funkciju primenjujemo apply metodu ciji prvi argument predstavlja objekat na kojem zelimo izvrsavanje funkcije, a potencijalno drugi argument je niz elemenata (gde svaki element predstavlja argument glavne metode).
+// Prvo dolazimo do funkcije cije izvrsavanje zelimo, to moze biti funkcija koja predstavlja metodu nekog objekta, a moze biti i
+// funkcija koja je definisana u global scope.
+// Nakon toga, na tu funkciju primenjujemo apply metodu ciji prvi argument predstavlja objekat na kojem zelimo izvrsavanje funkcije
+// , a potencijalno drugi argument je niz elemenata (gde svaki element predstavlja argument glavne metode).
 console.log(poruka.apply(restoran, ["Beogradu"]));
 
 const bindFunction = poruka.bind(restoran2);
@@ -85,7 +89,13 @@ const automobil = {
 // Za bilo koji objekat koji ima properties: satnaKarta, dnevnaKarta i mesecnaKarta.
 // Nakon toga je primeniti za automobil objekat i ispisati automobil nakon toga.
 
-//   2.
+function karte() {
+  this.automobil.garaza.satnaKarta *= 1.2;
+  this.automobil.garaza.dnevnaKarta *= 1.2;
+  this.automobil.garaza.mesecnaKarta *= 1.2;
+}
+// console.log(karte.automobil.call(garaza, 10));
+
 //  2. Zadatak
 //  The variable watchList holds an array of objects with information
 //  on several movies. Use reduce to find the average IMDB rating
@@ -222,4 +232,17 @@ const watchList = [
 //  containing the squares of only the positive integers
 //  (decimal numbers are not integers) when an array of real numbers is passed to it.
 //   An example of an array of real numbers is
+
+// Zadatak
+// Kompletirajte kod funkcije squareList koristeći bilo koju kombinaciju
+// map(), filter() i reduce() metoda. Funkcija treba da vrati novi niz
+// koji sadrži kvadrate samo pozitivnih celih brojeva
+// (decimalni brojevi nisu celi brojevi) kada joj se prosledi niz realnih brojeva.
+// Primer niza realnih brojeva je...
 const numbers = [-3, 4.8, 5, 3, -3.2];
+const numbers1 = numbers
+  .filter((el) => el > 0 && el % 1 === 0)
+  .map((el) => el * el)
+  .reduce((broj1, broj2) => broj1 + broj2);
+
+console.log(numbers1);

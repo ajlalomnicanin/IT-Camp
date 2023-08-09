@@ -58,7 +58,7 @@ for (let i = 1; i <= 10; i++) {
   }
 }
 console.log("---------");
-// NIJE MI JASNO I STO SE STAVLJA ===0
+
 // Ispisati parne brojeve od 1 do 20 na dva nacina.
 // 1.nacin
 //  i % 2 === ostatak i pri deljenju je jednak nuli, onda dobijamo parne brojeve

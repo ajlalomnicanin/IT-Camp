@@ -83,7 +83,7 @@ console.log("dobar " + "dan");
 
 // Sabiranje broja i stringa daje nam string (spaja sve zajedno 5 + "25" = 525)
 console.log(5 + "25");
-console.log(typeof (5 + "25"));
+console.log(typeof (5 + "25")); // bude string
 console.log(4 + " nedelja");
 // OVO
 console.log(25 - "15");
@@ -140,7 +140,7 @@ console.log(7 <= 19);
 // prvo proverava uslov (condition), ako je uslov ispunjen, izraz 1 (expression1) se izvrsava, ako nije onda se izvrsava izraz2
 // (condition) ? (expression1): (expression2)
 
-let c= 10;
+let c = 10;
 let f = c > 5 ? "c je veci od 5" : "c je manje od 5";
 console.log(f);
 
@@ -150,7 +150,7 @@ console.log(doINeedSunGlasses);
 
 // 5. Logicki operatori:
 
-// && Logicko i (ili)- Kada moraju biti zadovoljeni svi poduslovi
+// && Logicko i - Kada moraju biti zadovoljeni svi poduslovi
 console.log(5 === "5" && 4 <= 6); //false
 console.log(5 == "5" && 4 <= 6); //false
 
@@ -160,7 +160,6 @@ console.log(5 == "5" || "sreda" === "Sreda"); //true
 
 // ! Logicko not - Vraca boolean. Koji ce da bude suprotne vrednosti od promenljive.
 console.log(!isSunny);
-
 
 //  6. Tipovni operatori:
 
@@ -173,3 +172,4 @@ console.log(123 instanceof Object);
 
 console.log(typeof [1, 2, 3]);
 console.log([1, 2, 3] instanceof Array);
+

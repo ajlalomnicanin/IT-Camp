@@ -1,11 +1,11 @@
 // Za komunikaciju sa korisnikom koristimo prompt metodu:
 
-const ime = prompt("Unesite vase ime:");
-console.log(ime);
+// const ime = prompt("Unesite vase ime:");
+// console.log(ime);
 
-const Brojgodina = prompt("Unesite broj godina:");
+Brojgodina = prompt ("Unesite broj godina:");
 console.log(Brojgodina);
-console.log(typeof Brojgodina);
+console.log(typeof Brojgodina); //String
 
 // Posto je vrednost dobijena preko prompt metode uvek je string, i zato imamo potrebu da pretvorimo string u number tip podataka.
 // Pomenucemo 2. nacina za prevodjenje stringa u broj:
@@ -62,7 +62,7 @@ if (isNaN(Brojgodina4)) {
 }
 
 console.log(5 + "4");
-console.log(5 - "4")
+console.log(5 - "4");
 
 //Prazan string => numer=0
-console.log(Number(""))
+console.log(Number(""));
