@@ -5,7 +5,7 @@ const person = {
   age: 12,
 };
 console.log(person);
-
++
 // Svi objekti u JS su povezani sa nekim prototype objektom, pa mozemo reci da svaki objekat ima prototip.
 // Prototype objekat sadrzi odredjena s
 // vojsta i metode.
@@ -194,3 +194,4 @@ const products = [
     quantity: 14,
   },
 ];
+
