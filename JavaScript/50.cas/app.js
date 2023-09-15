@@ -1,4 +1,5 @@
-// Promise (obecanje) predstavlja JavaScript objekat koji predstavlja mesto za rezultate asinhrone funkcije sve dok traje izvrsenje
+// Promise (obecanje) predstavlja JavaScript objekat koji predstavlja mesto za rezultate asinhrone
+//  funkcije sve dok traje izvrsenje
 // asinhrone operacije.
 
 const obecanje = new Promise((resolve, reject) => {
