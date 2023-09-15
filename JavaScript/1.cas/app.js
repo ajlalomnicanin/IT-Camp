@@ -1,10 +1,10 @@
 console.log("Prvi cas javascripta");
 console.log("Nova poruka");
 
-tekst = document.getElementById("paragraf");
-console.log(tekst);
+// tekst = document.getElementById("paragraf");
+// console.log(tekst); 
 
-tekst.innerHTML = "<em>Da li se vidi paragaraf.<em>";
+// tekst.innerHTML = "<em>Da li se vidi paragaraf.<em>";
 
 // Tipovi podataka //
 
