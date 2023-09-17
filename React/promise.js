@@ -64,3 +64,9 @@ const myPromise = new Promise((resolve, reject) => {
 myPromise
   .then(() => console.log("Operacija je uspesno izvrsena"))
   .catch(() => console.log("Operacija nije uspesno izvrsena"));
+
+  // js singl tread jezik
+  prompt("ajla") // blok 
+  // queue red bukvalno 
+  //  stack redjamo knnjige
+  // went look promise postoje zbog toga

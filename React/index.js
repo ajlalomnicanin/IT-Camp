@@ -11,7 +11,9 @@ promies u knjizi js
 async await - asihrono cekanje u knjizi js
 closure - zatvaranje
 classes
-DOM
+events
+DOM js objekti koji zive u js  prvi  drugi u document bom - window , dokument zivi u utar windowa
+// JQuery 
 DOM manipulation
 events
 es6 js
@@ -64,6 +66,8 @@ const osoba1 = new Osoba("John", "Doe");
 
 // Pozivanje metode klase
 osoba1.pozdrav(); // Output: Zdravo, ja sam John Doe
+
+// OOP
 
 // -------------------------------------------------------------------------------------------
 
@@ -173,3 +177,10 @@ n.map();
 n.reduce();
 
 // undefined, null
+
+// function expresen vs function declaration 
+// trmporary dead  
+// fetch i http
+//iso model 
+// mddn web doct
+// js.info
